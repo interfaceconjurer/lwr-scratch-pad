@@ -1,0 +1,19 @@
+# Log files
+logs
+*.log
+*-debug.log
+*-error.log
+
+# Tools artifacts
+node_modules/*
+
+# Builds
+__lwr_cache__/*
+build/*
+
+# MacOS system files
+.DS_Store
+
+
+.yarn/*
+oneappexchange-shared-library-*.tgz

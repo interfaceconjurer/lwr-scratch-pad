@@ -1,0 +1,27 @@
+:host {
+    padding-bottom: 2rem;
+    display: block;
+}
+* {
+    box-sizing: border-box;
+}
+section {
+    box-shadow: var(--c360-g-shadow-3);
+    border-radius: var(--c360-g-radius-border-4);
+    padding: 1.5rem;
+    width: 100%;
+}
+h1 {
+    margin: 0;
+    padding-bottom: .5rem;
+}
+
+span {
+    font-style: italic;
+    padding-bottom: .5rem;
+    display: block;
+}
+
+p {
+    margin: 0;
+}

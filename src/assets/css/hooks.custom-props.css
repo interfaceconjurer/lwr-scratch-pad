@@ -1,0 +1,800 @@
+:root {
+      /* Default line-height for your application. */
+      --sds-g-line-height: 1.5;
+      --c360-g-line-height: var(--sds-g-line-height);
+      /* Scaled font-size that is 10 stops bigger than the base. */
+      --sds-g-font-scale-10: 3.247rem;
+      /* Neutral 20 */
+      --sds-g-color-palette-neutral-20: #2e2e2e;
+      --c360-g-color-palette-neutral-20: var(--sds-g-color-palette-neutral-20);
+      /* Orange 30 */
+      --sds-g-color-palette-orange-30: #5f3e02;
+      --c360-g-color-palette-orange-30: var(--sds-g-color-palette-orange-30);
+      /* Green 60 */
+      --sds-g-color-palette-green-60: #3ba755;
+      --c360-g-color-palette-green-60: var(--sds-g-color-palette-green-60);
+      /* Hot Orange 30 */
+      --sds-g-color-palette-hot-orange-30: #7e2600;
+      --c360-g-color-palette-hot-orange-30: var(--sds-g-color-palette-hot-orange-30);
+      /* Border size 2. */
+      --sds-g-sizing-border-2: 2px;
+      --c360-g-sizing-border-2: var(--sds-g-sizing-border-2);
+      /* Neutral 10 */
+      --sds-g-color-palette-neutral-10: #181818;
+      --c360-g-color-palette-neutral-10: var(--sds-g-color-palette-neutral-10);
+      /* Yellow 15 */
+      --sds-g-color-palette-yellow-15: #2e2204;
+      --c360-g-color-palette-yellow-15: var(--sds-g-color-palette-yellow-15);
+      /* Orange 20 */
+      --sds-g-color-palette-orange-20: #3e2b02;
+      --c360-g-color-palette-orange-20: var(--sds-g-color-palette-orange-20);
+      /* Neutral 65 */
+      --sds-g-color-palette-neutral-65: #a0a0a0;
+      --c360-g-color-palette-neutral-65: var(--sds-g-color-palette-neutral-65);
+      /* Green 50 */
+      --sds-g-color-palette-green-50: #2e844a;
+      --c360-g-color-palette-green-50: var(--sds-g-color-palette-green-50);
+      /* Hot Orange 20 */
+      --sds-g-color-palette-hot-orange-20: #541d01;
+      --c360-g-color-palette-hot-orange-20: var(--sds-g-color-palette-hot-orange-20);
+      /* Orange 10 */
+      --sds-g-color-palette-orange-10: #201600;
+      --c360-g-color-palette-orange-10: var(--sds-g-color-palette-orange-10);
+      /* Green 40 */
+      --sds-g-color-palette-green-40: #22683e;
+      --c360-g-color-palette-green-40: var(--sds-g-color-palette-green-40);
+      /* Hot Orange 10 */
+      --sds-g-color-palette-hot-orange-10: #281202;
+      --c360-g-color-palette-hot-orange-10: var(--sds-g-color-palette-hot-orange-10);
+      /* Orange 65 */
+      --sds-g-color-palette-orange-65: #f38303;
+      --c360-g-color-palette-orange-65: var(--sds-g-color-palette-orange-65);
+      /* Green 95 */
+      --sds-g-color-palette-green-95: #ebf7e6;
+      --c360-g-color-palette-green-95: var(--sds-g-color-palette-green-95);
+      /* Hot Orange 65 */
+      --sds-g-color-palette-hot-orange-65: #ff784f;
+      --c360-g-color-palette-hot-orange-65: var(--sds-g-color-palette-hot-orange-65);
+      /* System font stack for your application. */
+      --sds-g-font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      --c360-g-font-family: var(--sds-g-font-family);
+      /* Green 30 */
+      --sds-g-color-palette-green-30: #194e31;
+      --c360-g-color-palette-green-30: var(--sds-g-color-palette-green-30);
+      /* Cloud Blue 15 */
+      --sds-g-color-palette-cloud-blue-15: #0a2636;
+      --c360-g-color-palette-cloud-blue-15: var(--sds-g-color-palette-cloud-blue-15);
+      /* Indigo 15 */
+      --sds-g-color-palette-indigo-15: #1f0974;
+      --c360-g-color-palette-indigo-15: var(--sds-g-color-palette-indigo-15);
+      /* Default color on active for hyperlinks. */
+      --sds-g-link-color-active: #032d60;
+      --c360-g-link-color-active: var(--sds-g-link-color-active);
+      /* Neutral Inverse 1 - if used as a background, please use Neutral Inverse Contrast 1-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-1: #181818;
+      --c360-g-color-neutral-inverse-1: var(--sds-g-color-neutral-inverse-1);
+      /* Green 20 */
+      --sds-g-color-palette-green-20: #0e3522;
+      --c360-g-color-palette-green-20: var(--sds-g-color-palette-green-20);
+      /* Error Base 1 - if used as a background, please use Error Base Contrast 1-4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-1: #ffffff;
+      --c360-g-color-error-base-1: var(--sds-g-color-error-base-1);
+      /* Shadow depth 1 */
+      --sds-g-shadow-1: 0 0 2px 0 #18181814, 0 2px 4px 1px #18181828;
+      --c360-g-shadow-1: var(--sds-g-shadow-1);
+      /* Brand Inverse 1 - if used as a background, please use Brand Inverse Contrast 1-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-1: #001639;
+      --c360-g-color-brand-inverse-1: var(--sds-g-color-brand-inverse-1);
+      /* Neutral Inverse 2 - if used as a background, please use Neutral Inverse Contrast 2-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-2: #2e2e30;
+      --c360-g-color-neutral-inverse-2: var(--sds-g-color-neutral-inverse-2);
+      /* Green 10 */
+      --sds-g-color-palette-green-10: #071b12;
+      --c360-g-color-palette-green-10: var(--sds-g-color-palette-green-10);
+      /* Error Base 2 - if used as a background, please use Error Base Contrast 2-4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-2: #fef1ee;
+      --c360-g-color-error-base-2: var(--sds-g-color-error-base-2);
+      /* Green 65 */
+      --sds-g-color-palette-green-65: #41b658;
+      --c360-g-color-palette-green-65: var(--sds-g-color-palette-green-65);
+      /* Neutral Base 1 - if used as a background, please use Neutral Base Contrast 1-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-1: #ffffff;
+      --c360-g-color-neutral-base-1: var(--sds-g-color-neutral-base-1);
+      /* Shadow depth 2 */
+      --sds-g-shadow-2: 0 2px 8px -2px #18181814, 0 8px 12px -2px #18181828;
+      --c360-g-shadow-2: var(--sds-g-shadow-2);
+      /* Brand Base 1 - if used as a background, please use Brand Base Contrast 1-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-1: #ffffff;
+      --c360-g-color-brand-base-1: var(--sds-g-color-brand-base-1);
+      /* Brand Inverse 2 - if used as a background, please use Brand Inverse Contrast 2-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-2: #032d60;
+      --c360-g-color-brand-inverse-2: var(--sds-g-color-brand-inverse-2);
+      /* Neutral Inverse 3 - if used as a background, please use Neutral Inverse Contrast 3-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-3: #444447;
+      --c360-g-color-neutral-inverse-3: var(--sds-g-color-neutral-inverse-3);
+      /* Neutral 15 */
+      --sds-g-color-palette-neutral-15: #242424;
+      --c360-g-color-palette-neutral-15: var(--sds-g-color-palette-neutral-15);
+      /* Error Base 3 - if used as a background, please use Error Base Contrast 3-4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-3: #feded8;
+      --c360-g-color-error-base-3: var(--sds-g-color-error-base-3);
+      /* Neutral Base 2 - if used as a background, please use Neutral Base Contrast 2-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-2: #f3f3f3;
+      --c360-g-color-neutral-base-2: var(--sds-g-color-neutral-base-2);
+      /* Shadow depth 3 */
+      --sds-g-shadow-3: 0 12px 24px -4px #18181814, 0 16px 32px -4px #18181828;
+      --c360-g-shadow-3: var(--sds-g-shadow-3);
+      /* Brand Base 2 - if used as a background, please use Brand Base Contrast 2-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-2: #eef4ff;
+      --c360-g-color-brand-base-2: var(--sds-g-color-brand-base-2);
+      /* Brand Inverse 3 - if used as a background, please use Brand Inverse Contrast 3-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-3: #014486;
+      --c360-g-color-brand-inverse-3: var(--sds-g-color-brand-inverse-3);
+      /* Warning Base Contrast 1 - if used as a background, please use Warning Base Base 1-4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-contrast-1: #a86403;
+      --c360-g-color-warning-base-contrast-1: var(--sds-g-color-warning-base-contrast-1);
+      /* Neutral Inverse 4 - if used as a background, please use Neutral Inverse Contrast 4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-4: #5a5c61;
+      --c360-g-color-neutral-inverse-4: var(--sds-g-color-neutral-inverse-4);
+      /* Spacing size 1. */
+      --sds-g-spacing-1: 0.25rem;
+      --c360-g-spacing-1: var(--sds-g-spacing-1);
+      /* Orange 15 */
+      --sds-g-color-palette-orange-15: #371e03;
+      --c360-g-color-palette-orange-15: var(--sds-g-color-palette-orange-15);
+      /* Error Base 4 - if used as a background, please use Error Base Contrast 4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-4: #feb8ab;
+      --c360-g-color-error-base-4: var(--sds-g-color-error-base-4);
+      /* Hot Orange 15 */
+      --sds-g-color-palette-hot-orange-15: #421604;
+      --c360-g-color-palette-hot-orange-15: var(--sds-g-color-palette-hot-orange-15);
+      /* Neutral Base 3 - if used as a background, please use Neutral Base Contrast 3-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-3: #e5e5e5;
+      --c360-g-color-neutral-base-3: var(--sds-g-color-neutral-base-3);
+      /* Shadow depth 4 */
+      --sds-g-shadow-4: 0 24px 48px -4px #18181833;
+      --c360-g-shadow-4: var(--sds-g-shadow-4);
+      /* Brand Base 3 - if used as a background, please use Brand Base Contrast 3-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-3: #d8e6fe;
+      --c360-g-color-brand-base-3: var(--sds-g-color-brand-base-3);
+      /* Brand Inverse 4 - if used as a background, please use Brand Inverse Contrast 4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-4: #0b5cab;
+      --c360-g-color-brand-inverse-4: var(--sds-g-color-brand-inverse-4);
+      /* Warning Base Contrast 2 - if used as a background, please use Warning Base Base 2-4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-contrast-2: #8c4b02;
+      --c360-g-color-warning-base-contrast-2: var(--sds-g-color-warning-base-contrast-2);
+      /* Spacing size 2. */
+      --sds-g-spacing-2: 0.5rem;
+      --c360-g-spacing-2: var(--sds-g-spacing-2);
+      /* Neutral Base 4 - if used as a background, please use Neutral Base Contrast 4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-4: #c9c9cb;
+      --c360-g-color-neutral-base-4: var(--sds-g-color-neutral-base-4);
+      /* Brand Base 4 - if used as a background, please use Brand Base Contrast 4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-4: #aacbff;
+      --c360-g-color-brand-base-4: var(--sds-g-color-brand-base-4);
+      /* Default line-height for your application. */
+      --sds-g-font-leading: 1.5;
+      --c360-g-font-leading: var(--sds-g-font-leading);
+      /* Warning Base Contrast 3 - if used as a background, please use Warning Base Base 3-4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-contrast-3: #6f3400;
+      --c360-g-color-warning-base-contrast-3: var(--sds-g-color-warning-base-contrast-3);
+      /* Success Base 1 - if used as a background, please use Success Base Contrast 1-4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-1: #ffffff;
+      --c360-g-color-success-base-1: var(--sds-g-color-success-base-1);
+      /* Spacing size 3. */
+      --sds-g-spacing-3: 0.75rem;
+      --c360-g-spacing-3: var(--sds-g-spacing-3);
+      /* Violet 90 */
+      --sds-g-color-palette-violet-90: #f2defe;
+      --c360-g-color-palette-violet-90: var(--sds-g-color-palette-violet-90);
+      /* Spacing size 10. */
+      --sds-g-spacing-10: 4rem;
+      --c360-g-spacing-10: var(--sds-g-spacing-10);
+      /* Warning Base Contrast 4 - if used as a background, please use Warning Base Base 4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-contrast-4: #4f2100;
+      --c360-g-color-warning-base-contrast-4: var(--sds-g-color-warning-base-contrast-4);
+      /* Success Base 2 - if used as a background, please use Success Base Contrast 2-4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-2: #ebf7e6;
+      --c360-g-color-success-base-2: var(--sds-g-color-success-base-2);
+      /* Spacing size 4. */
+      --sds-g-spacing-4: 1rem;
+      --c360-g-spacing-4: var(--sds-g-spacing-4);
+      /* Green 15 */
+      --sds-g-color-palette-green-15: #0c2912;
+      --c360-g-color-palette-green-15: var(--sds-g-color-palette-green-15);
+      /* Violet 80 */
+      --sds-g-color-palette-violet-80: #e5b9fe;
+      --c360-g-color-palette-violet-80: var(--sds-g-color-palette-violet-80);
+      /* Spacing size 11. */
+      --sds-g-spacing-11: 4.5rem;
+      --c360-g-spacing-11: var(--sds-g-spacing-11);
+      /* Success Base 3 - if used as a background, please use Success Base Contrast 3-4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-3: #cdefc4;
+      --c360-g-color-success-base-3: var(--sds-g-color-success-base-3);
+      /* Spacing size 5. */
+      --sds-g-spacing-5: 1.5rem;
+      --c360-g-spacing-5: var(--sds-g-spacing-5);
+      /* Small border radius for UI elements. */
+      --sds-g-radius-border-1: 0.125rem;
+      --c360-g-radius-border-1: var(--sds-g-radius-border-1);
+      /* Violet 70 */
+      --sds-g-color-palette-violet-70: #d892fe;
+      --c360-g-color-palette-violet-70: var(--sds-g-color-palette-violet-70);
+      /* Spacing size 12. */
+      --sds-g-spacing-12: 5rem;
+      --c360-g-spacing-12: var(--sds-g-spacing-12);
+      /* Default border color for UI elements. */
+      --sds-g-color-border-base-1: #aeaeae;
+      --c360-g-color-border-base-1: var(--sds-g-color-border-base-1);
+      /* Teal 90 */
+      --sds-g-color-palette-teal-90: #acf3e4;
+      --c360-g-color-palette-teal-90: var(--sds-g-color-palette-teal-90);
+      /* Success Base 4 - if used as a background, please use Success Base Contrast 4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-4: #91db8b;
+      --c360-g-color-success-base-4: var(--sds-g-color-success-base-4);
+      /* Spacing size 6. */
+      --sds-g-spacing-6: 2rem;
+      --c360-g-spacing-6: var(--sds-g-spacing-6);
+      /* Medium border radius for UI elements. */
+      --sds-g-radius-border-2: 0.25rem;
+      --c360-g-radius-border-2: var(--sds-g-radius-border-2);
+      /* Purple 90 */
+      --sds-g-color-palette-purple-90: #ece1f9;
+      --c360-g-color-palette-purple-90: var(--sds-g-color-palette-purple-90);
+      /* Violet 60 */
+      --sds-g-color-palette-violet-60: #cb65ff;
+      --c360-g-color-palette-violet-60: var(--sds-g-color-palette-violet-60);
+      /* Alternate border color for UI elements. */
+      --sds-g-color-border-base-2: #939393;
+      --c360-g-color-border-base-2: var(--sds-g-color-border-base-2);
+      /* Teal 80 */
+      --sds-g-color-palette-teal-80: #04e1cb;
+      --c360-g-color-palette-teal-80: var(--sds-g-color-palette-teal-80);
+      /* Spacing size 7. */
+      --sds-g-spacing-7: 2.5rem;
+      --c360-g-spacing-7: var(--sds-g-spacing-7);
+      /* Large border radius for UI elements. */
+      --sds-g-radius-border-3: 0.5rem;
+      --c360-g-radius-border-3: var(--sds-g-radius-border-3);
+      /* Purple 80 */
+      --sds-g-color-palette-purple-80: #d78ff5;
+      --c360-g-color-palette-purple-80: var(--sds-g-color-palette-purple-80);
+      /* Violet 50 */
+      --sds-g-color-palette-violet-50: #ba01ff;
+      --c360-g-color-palette-violet-50: var(--sds-g-color-palette-violet-50);
+      /* Teal 70 */
+      --sds-g-color-palette-teal-70: #01c3b3;
+      --c360-g-color-palette-teal-70: var(--sds-g-color-palette-teal-70);
+      /* Spacing size 8. */
+      --sds-g-spacing-8: 3rem;
+      --c360-g-spacing-8: var(--sds-g-spacing-8);
+      /* Extra Large border radius for UI elements. */
+      --sds-g-radius-border-4: 1rem;
+      --c360-g-radius-border-4: var(--sds-g-radius-border-4);
+      /* Blue 90 */
+      --sds-g-color-palette-blue-90: #d8e6fe;
+      --c360-g-color-palette-blue-90: var(--sds-g-color-palette-blue-90);
+      /* Purple 70 */
+      --sds-g-color-palette-purple-70: #c29ef1;
+      --c360-g-color-palette-purple-70: var(--sds-g-color-palette-purple-70);
+      /* Violet 40 */
+      --sds-g-color-palette-violet-40: #9602c7;
+      --c360-g-color-palette-violet-40: var(--sds-g-color-palette-violet-40);
+      /* Violet 95 */
+      --sds-g-color-palette-violet-95: #f9f0ff;
+      --c360-g-color-palette-violet-95: var(--sds-g-color-palette-violet-95);
+      /* Success Base Contrast 1 - if used as a background, please use Success Base Base 1-4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-contrast-1: #2e844a;
+      --c360-g-color-success-base-contrast-1: var(--sds-g-color-success-base-contrast-1);
+      /* Teal 60 */
+      --sds-g-color-palette-teal-60: #06a59a;
+      --c360-g-color-palette-teal-60: var(--sds-g-color-palette-teal-60);
+      /* Red 90 */
+      --sds-g-color-palette-red-90: #feded8;
+      --c360-g-color-palette-red-90: var(--sds-g-color-palette-red-90);
+      /* Spacing size 9. */
+      --sds-g-spacing-9: 3.5rem;
+      --c360-g-spacing-9: var(--sds-g-spacing-9);
+      /* Blue 80 */
+      --sds-g-color-palette-blue-80: #aacbff;
+      --c360-g-color-palette-blue-80: var(--sds-g-color-palette-blue-80);
+      /* Purple 60 */
+      --sds-g-color-palette-purple-60: #ad7bee;
+      --c360-g-color-palette-purple-60: var(--sds-g-color-palette-purple-60);
+      /* Violet 30 */
+      --sds-g-color-palette-violet-30: #730394;
+      --c360-g-color-palette-violet-30: var(--sds-g-color-palette-violet-30);
+      /* Success Base Contrast 2 - if used as a background, please use Success Base Base 2-4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-contrast-2: #22683e;
+      --c360-g-color-success-base-contrast-2: var(--sds-g-color-success-base-contrast-2);
+      /* Scaled font-size that is 1 stop bigger than the base. */
+      --sds-g-font-scale-1: 1.125rem;
+      /* Red 80 */
+      --sds-g-color-palette-red-80: #feb8ab;
+      --c360-g-color-palette-red-80: var(--sds-g-color-palette-red-80);
+      /* Blue 70 */
+      --sds-g-color-palette-blue-70: #78b0fd;
+      --c360-g-color-palette-blue-70: var(--sds-g-color-palette-blue-70);
+      /* Purple 50 */
+      --sds-g-color-palette-purple-50: #9050e9;
+      --c360-g-color-palette-purple-50: var(--sds-g-color-palette-purple-50);
+      /* Violet 20 */
+      --sds-g-color-palette-violet-20: #520066;
+      --c360-g-color-palette-violet-20: var(--sds-g-color-palette-violet-20);
+      /* Success Base Contrast 3 - if used as a background, please use Success Base Base 3-4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-contrast-3: #194e31;
+      --c360-g-color-success-base-contrast-3: var(--sds-g-color-success-base-contrast-3);
+      /* Warning Base 1 - if used as a background, please use Warning Base Contrast 1-4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-1: #ffffff;
+      --c360-g-color-warning-base-1: var(--sds-g-color-warning-base-1);
+      /* Default color for hyperlinks. */
+      --sds-g-link-color: #0b5cab;
+      --c360-g-link-color: var(--sds-g-link-color);
+      /* Teal 50 */
+      --sds-g-color-palette-teal-50: #0b827c;
+      --c360-g-color-palette-teal-50: var(--sds-g-color-palette-teal-50);
+      /* Teal 95 */
+      --sds-g-color-palette-teal-95: #def9f3;
+      --c360-g-color-palette-teal-95: var(--sds-g-color-palette-teal-95);
+      /* Red 70 */
+      --sds-g-color-palette-red-70: #fe8f7d;
+      --c360-g-color-palette-red-70: var(--sds-g-color-palette-red-70);
+      /* Scaled font-size that is 2 stops bigger than the base. */
+      --sds-g-font-scale-2: 1.266rem;
+      /* Blue 60 */
+      --sds-g-color-palette-blue-60: #1b96ff;
+      --c360-g-color-palette-blue-60: var(--sds-g-color-palette-blue-60);
+      /* Purple 40 */
+      --sds-g-color-palette-purple-40: #7526e3;
+      --c360-g-color-palette-purple-40: var(--sds-g-color-palette-purple-40);
+      /* Violet 10 */
+      --sds-g-color-palette-violet-10: #2e0039;
+      --c360-g-color-palette-violet-10: var(--sds-g-color-palette-violet-10);
+      /* Purple 95 */
+      --sds-g-color-palette-purple-95: #f6f2fb;
+      --c360-g-color-palette-purple-95: var(--sds-g-color-palette-purple-95);
+      /* Violet 65 */
+      --sds-g-color-palette-violet-65: #d17dfe;
+      --c360-g-color-palette-violet-65: var(--sds-g-color-palette-violet-65);
+      /* Success Base Contrast 4 - if used as a background, please use Success Base Base 4 to meet accessibility guidelines. */
+      --sds-g-color-success-base-contrast-4: #0e3522;
+      --c360-g-color-success-base-contrast-4: var(--sds-g-color-success-base-contrast-4);
+      /* Warning Base 2 - if used as a background, please use Warning Base Contrast 2-4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-2: #fbf3e0;
+      --c360-g-color-warning-base-2: var(--sds-g-color-warning-base-2);
+      /* Teal 40 */
+      --sds-g-color-palette-teal-40: #056764;
+      --c360-g-color-palette-teal-40: var(--sds-g-color-palette-teal-40);
+      /* Neutral Base Contrast 1 - if used as a background, please use Neutral Base 1-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-contrast-1: #929398;
+      --c360-g-color-neutral-base-contrast-1: var(--sds-g-color-neutral-base-contrast-1);
+      /* Red 60 */
+      --sds-g-color-palette-red-60: #fe5c4c;
+      --c360-g-color-palette-red-60: var(--sds-g-color-palette-red-60);
+      /* Scaled font-size that is 3 stops bigger than the base. */
+      --sds-g-font-scale-3: 1.424rem;
+      /* Blue 50 */
+      --sds-g-color-palette-blue-50: #0176d3;
+      --c360-g-color-palette-blue-50: var(--sds-g-color-palette-blue-50);
+      /* Purple 30 */
+      --sds-g-color-palette-purple-30: #5a1ba9;
+      --c360-g-color-palette-purple-30: var(--sds-g-color-palette-purple-30);
+      /* Pink 90 */
+      --sds-g-color-palette-pink-90: #fddde3;
+      --c360-g-color-palette-pink-90: var(--sds-g-color-palette-pink-90);
+      /* Warning Base 3 - if used as a background, please use Warning Base Contrast 3-4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-3: #f9e3b6;
+      --c360-g-color-warning-base-3: var(--sds-g-color-warning-base-3);
+      /* Brand Base Contrast 1 - if used as a background, please use Brand Base 1-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-contrast-1: #1b96ff;
+      --c360-g-color-brand-base-contrast-1: var(--sds-g-color-brand-base-contrast-1);
+      /* Teal 30 */
+      --sds-g-color-palette-teal-30: #024d4c;
+      --c360-g-color-palette-teal-30: var(--sds-g-color-palette-teal-30);
+      /* Neutral Base Contrast 2 - if used as a background, please use Neutral Base 2-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-contrast-2: #737479;
+      --c360-g-color-neutral-base-contrast-2: var(--sds-g-color-neutral-base-contrast-2);
+      /* Scaled font-size that is 1 stop smaller than the base. */
+      --sds-g-font-scale-neg-1: 0.875rem;
+      /* Red 50 */
+      --sds-g-color-palette-red-50: #ea001e;
+      --c360-g-color-palette-red-50: var(--sds-g-color-palette-red-50);
+      /* Scaled font-size that is 4 stops bigger than the base. */
+      --sds-g-font-scale-4: 1.602rem;
+      /* Blue 40 */
+      --sds-g-color-palette-blue-40: #0b5cab;
+      --c360-g-color-palette-blue-40: var(--sds-g-color-palette-blue-40);
+      /* Purple 20 */
+      --sds-g-color-palette-purple-20: #401075;
+      --c360-g-color-palette-purple-20: var(--sds-g-color-palette-purple-20);
+      /* Neutral Inverse Contrast 1 - if used as a background, please use Neutral Inverse Base 1-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-contrast-1: #737479;
+      --c360-g-color-neutral-inverse-contrast-1: var(--sds-g-color-neutral-inverse-contrast-1);
+      /* Blue 95 */
+      --sds-g-color-palette-blue-95: #eef4ff;
+      --c360-g-color-palette-blue-95: var(--sds-g-color-palette-blue-95);
+      /* Brand Inverse Contrast 1 - if used as a background, please use Brand Inverse Base 1-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-contrast-1: #0176d3;
+      --c360-g-color-brand-inverse-contrast-1: var(--sds-g-color-brand-inverse-contrast-1);
+      /* Pink 80 */
+      --sds-g-color-palette-pink-80: #fdb6c5;
+      --c360-g-color-palette-pink-80: var(--sds-g-color-palette-pink-80);
+      /* Warning Base 4 - if used as a background, please use Warning Base Contrast 4 to meet accessibility guidelines. */
+      --sds-g-color-warning-base-4: #fcc003;
+      --c360-g-color-warning-base-4: var(--sds-g-color-warning-base-4);
+      /* Brand Base Contrast 2 - if used as a background, please use Brand Base 2-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-contrast-2: #0176d3;
+      --c360-g-color-brand-base-contrast-2: var(--sds-g-color-brand-base-contrast-2);
+      /* Teal 20 */
+      --sds-g-color-palette-teal-20: #023434;
+      --c360-g-color-palette-teal-20: var(--sds-g-color-palette-teal-20);
+      /* Error Base Contrast 1 - if used as a background, please use Error Base Base 1-4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-contrast-1: #ea001e;
+      --c360-g-color-error-base-contrast-1: var(--sds-g-color-error-base-contrast-1);
+      /* Teal 65 */
+      --sds-g-color-palette-teal-65: #03b4a7;
+      --c360-g-color-palette-teal-65: var(--sds-g-color-palette-teal-65);
+      /* Neutral Base Contrast 3 - if used as a background, please use Neutral Base 3-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-contrast-3: #5a5c61;
+      --c360-g-color-neutral-base-contrast-3: var(--sds-g-color-neutral-base-contrast-3);
+      /* Scaled font-size that is 2 stops smaller than the base. */
+      --sds-g-font-scale-neg-2: 0.8125rem;
+      /* Red 40 */
+      --sds-g-color-palette-red-40: #ba0517;
+      --c360-g-color-palette-red-40: var(--sds-g-color-palette-red-40);
+      /* Scaled font-size that is 5 stops bigger than the base. */
+      --sds-g-font-scale-5: 1.802rem;
+      /* Blue 30 */
+      --sds-g-color-palette-blue-30: #014486;
+      --c360-g-color-palette-blue-30: var(--sds-g-color-palette-blue-30);
+      /* Purple 10 */
+      --sds-g-color-palette-purple-10: #240643;
+      --c360-g-color-palette-purple-10: var(--sds-g-color-palette-purple-10);
+      /* Red 95 */
+      --sds-g-color-palette-red-95: #fef1ee;
+      --c360-g-color-palette-red-95: var(--sds-g-color-palette-red-95);
+      /* Neutral Inverse Contrast 2 - if used as a background, please use Neutral Inverse Base 2-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-contrast-2: #929398;
+      --c360-g-color-neutral-inverse-contrast-2: var(--sds-g-color-neutral-inverse-contrast-2);
+      /* Purple 65 */
+      --sds-g-color-palette-purple-65: #b78def;
+      --c360-g-color-palette-purple-65: var(--sds-g-color-palette-purple-65);
+      /* Brand Inverse Contrast 2 - if used as a background, please use Brand Inverse Base 2-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-contrast-2: #1b96ff;
+      --c360-g-color-brand-inverse-contrast-2: var(--sds-g-color-brand-inverse-contrast-2);
+      /* Yellow 90 */
+      --sds-g-color-palette-yellow-90: #f9e3b6;
+      --c360-g-color-palette-yellow-90: var(--sds-g-color-palette-yellow-90);
+      /* Pink 70 */
+      --sds-g-color-palette-pink-70: #fe8aa7;
+      --c360-g-color-palette-pink-70: var(--sds-g-color-palette-pink-70);
+      /* Teal 10 */
+      --sds-g-color-palette-teal-10: #071b12;
+      --c360-g-color-palette-teal-10: var(--sds-g-color-palette-teal-10);
+      /* Brand Base Contrast 3 - if used as a background, please use Brand Base 3-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-contrast-3: #0b5cab;
+      --c360-g-color-brand-base-contrast-3: var(--sds-g-color-brand-base-contrast-3);
+      /* Error Base Contrast 2 - if used as a background, please use Error Base Base 2-4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-contrast-2: #ba0517;
+      --c360-g-color-error-base-contrast-2: var(--sds-g-color-error-base-contrast-2);
+      /* Neutral Base Contrast 4 - if used as a background, please use Neutral Base 4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-base-contrast-4: #181818;
+      --c360-g-color-neutral-base-contrast-4: var(--sds-g-color-neutral-base-contrast-4);
+      /* Red 30 */
+      --sds-g-color-palette-red-30: #8e030f;
+      --c360-g-color-palette-red-30: var(--sds-g-color-palette-red-30);
+      /* Scaled font-size that is 3 stops smaller than the base. */
+      --sds-g-font-scale-neg-3: 0.75rem;
+      /* Blue 20 */
+      --sds-g-color-palette-blue-20: #032d60;
+      --c360-g-color-palette-blue-20: var(--sds-g-color-palette-blue-20);
+      /* Scaled font-size that is 6 stops bigger than the base. */
+      --sds-g-font-scale-6: 2.027rem;
+      /* Neutral Inverse Contrast 3 - if used as a background, please use Neutral Inverse Base 3-4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-contrast-3: #adaeb1;
+      --c360-g-color-neutral-inverse-contrast-3: var(--sds-g-color-neutral-inverse-contrast-3);
+      /* Brand Inverse Contrast 3 - if used as a background, please use Brand Inverse Base 3-4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-contrast-3: #78b0fd;
+      --c360-g-color-brand-inverse-contrast-3: var(--sds-g-color-brand-inverse-contrast-3);
+      /* Yellow 80 */
+      --sds-g-color-palette-yellow-80: #fcc003;
+      --c360-g-color-palette-yellow-80: var(--sds-g-color-palette-yellow-80);
+      /* Pink 60 */
+      --sds-g-color-palette-pink-60: #ff538a;
+      --c360-g-color-palette-pink-60: var(--sds-g-color-palette-pink-60);
+      /* Brand Base Contrast 4 - if used as a background, please use Brand Base 4 to meet accessibility guidelines. */
+      --sds-g-color-brand-base-contrast-4: #001639;
+      --c360-g-color-brand-base-contrast-4: var(--sds-g-color-brand-base-contrast-4);
+      /* Error Base Contrast 3 - if used as a background, please use Error Base Base 3-4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-contrast-3: #8e030f;
+      --c360-g-color-error-base-contrast-3: var(--sds-g-color-error-base-contrast-3);
+      /* Red 20 */
+      --sds-g-color-palette-red-20: #640103;
+      --c360-g-color-palette-red-20: var(--sds-g-color-palette-red-20);
+      /* Scaled font-size that is 4 stops smaller than the base. */
+      --sds-g-font-scale-neg-4: 0.625rem;
+      /* Blue 10 */
+      --sds-g-color-palette-blue-10: #001639;
+      --c360-g-color-palette-blue-10: var(--sds-g-color-palette-blue-10);
+      /* Scaled font-size that is 7 stops bigger than the base. */
+      --sds-g-font-scale-7: 2.281rem;
+      /* Blue 65 */
+      --sds-g-color-palette-blue-65: #57a3fd;
+      --c360-g-color-palette-blue-65: var(--sds-g-color-palette-blue-65);
+      /* Neutral Inverse Contrast 4 - if used as a background, please use Neutral Inverse Base 4 to meet accessibility guidelines. */
+      --sds-g-color-neutral-inverse-contrast-4: #ffffff;
+      --c360-g-color-neutral-inverse-contrast-4: var(--sds-g-color-neutral-inverse-contrast-4);
+      /* Violet 15 */
+      --sds-g-color-palette-violet-15: #3d0157;
+      --c360-g-color-palette-violet-15: var(--sds-g-color-palette-violet-15);
+      /* Brand Inverse Contrast 4 - if used as a background, please use Brand Inverse Base 4 to meet accessibility guidelines. */
+      --sds-g-color-brand-inverse-contrast-4: #ffffff;
+      --c360-g-color-brand-inverse-contrast-4: var(--sds-g-color-brand-inverse-contrast-4);
+      /* Yellow 70 */
+      --sds-g-color-palette-yellow-70: #e4a201;
+      --c360-g-color-palette-yellow-70: var(--sds-g-color-palette-yellow-70);
+      /* Pink 50 */
+      --sds-g-color-palette-pink-50: #e3066a;
+      --c360-g-color-palette-pink-50: var(--sds-g-color-palette-pink-50);
+      /* Cloud Blue 90 */
+      --sds-g-color-palette-cloud-blue-90: #cfe9fe;
+      --c360-g-color-palette-cloud-blue-90: var(--sds-g-color-palette-cloud-blue-90);
+      /* Indigo 90 */
+      --sds-g-color-palette-indigo-90: #e0e5f8;
+      --c360-g-color-palette-indigo-90: var(--sds-g-color-palette-indigo-90);
+      /* Circular border radius for UI elements. */
+      --sds-g-radius-border-circle: 100%;
+      --c360-g-radius-border-circle: var(--sds-g-radius-border-circle);
+      /* Error Base Contrast 4 - if used as a background, please use Error Base Base 4 to meet accessibility guidelines. */
+      --sds-g-color-error-base-contrast-4: #640103;
+      --c360-g-color-error-base-contrast-4: var(--sds-g-color-error-base-contrast-4);
+      /* Red 10 */
+      --sds-g-color-palette-red-10: #300c01;
+      --c360-g-color-palette-red-10: var(--sds-g-color-palette-red-10);
+      /* Red 65 */
+      --sds-g-color-palette-red-65: #fe7765;
+      --c360-g-color-palette-red-65: var(--sds-g-color-palette-red-65);
+      /* Scaled font-size that is 8 stops bigger than the base. */
+      --sds-g-font-scale-8: 2.566rem;
+      /* Yellow 60 */
+      --sds-g-color-palette-yellow-60: #ca8501;
+      --c360-g-color-palette-yellow-60: var(--sds-g-color-palette-yellow-60);
+      /* Pink 40 */
+      --sds-g-color-palette-pink-40: #b60554;
+      --c360-g-color-palette-pink-40: var(--sds-g-color-palette-pink-40);
+      /* Cloud Blue 80 */
+      --sds-g-color-palette-cloud-blue-80: #90d0fe;
+      --c360-g-color-palette-cloud-blue-80: var(--sds-g-color-palette-cloud-blue-80);
+      /* Pink 95 */
+      --sds-g-color-palette-pink-95: #fef0f3;
+      --c360-g-color-palette-pink-95: var(--sds-g-color-palette-pink-95);
+      /* Indigo 80 */
+      --sds-g-color-palette-indigo-80: #bec7f6;
+      --c360-g-color-palette-indigo-80: var(--sds-g-color-palette-indigo-80);
+      /* Scaled font-size that is 9 stops bigger than the base. */
+      --sds-g-font-scale-9: 2.887rem;
+      /* Yellow 50 */
+      --sds-g-color-palette-yellow-50: #a86403;
+      --c360-g-color-palette-yellow-50: var(--sds-g-color-palette-yellow-50);
+      /* Pink 30 */
+      --sds-g-color-palette-pink-30: #8a033e;
+      --c360-g-color-palette-pink-30: var(--sds-g-color-palette-pink-30);
+      /* Monospace font stack for your application. */
+      --c360-g-font-family-monospace: Consolas, Menlo, Monaco, Courier, monospace;
+      /* Cloud Blue 70 */
+      --sds-g-color-palette-cloud-blue-70: #1ab9ff;
+      --c360-g-color-palette-cloud-blue-70: var(--sds-g-color-palette-cloud-blue-70);
+      /* Indigo 70 */
+      --sds-g-color-palette-indigo-70: #9ea9f1;
+      --c360-g-color-palette-indigo-70: var(--sds-g-color-palette-indigo-70);
+      /* Purple 15 */
+      --sds-g-color-palette-purple-15: #300b60;
+      --c360-g-color-palette-purple-15: var(--sds-g-color-palette-purple-15);
+      /* Yellow 40 */
+      --sds-g-color-palette-yellow-40: #8c4b02;
+      --c360-g-color-palette-yellow-40: var(--sds-g-color-palette-yellow-40);
+      /* Neutral 90 */
+      --sds-g-color-palette-neutral-90: #e5e5e5;
+      --c360-g-color-palette-neutral-90: var(--sds-g-color-palette-neutral-90);
+      /* Pink 20 */
+      --sds-g-color-palette-pink-20: #61022a;
+      --c360-g-color-palette-pink-20: var(--sds-g-color-palette-pink-20);
+      /* Yellow 95 */
+      --sds-g-color-palette-yellow-95: #fbf3e0;
+      --c360-g-color-palette-yellow-95: var(--sds-g-color-palette-yellow-95);
+      /* Cloud Blue 60 */
+      --sds-g-color-palette-cloud-blue-60: #0d9dda;
+      --c360-g-color-palette-cloud-blue-60: var(--sds-g-color-palette-cloud-blue-60);
+      /* Indigo 60 */
+      --sds-g-color-palette-indigo-60: #7f8ced;
+      --c360-g-color-palette-indigo-60: var(--sds-g-color-palette-indigo-60);
+      /* Teal 15 */
+      --sds-g-color-palette-teal-15: #072825;
+      --c360-g-color-palette-teal-15: var(--sds-g-color-palette-teal-15);
+      /* Yellow 30 */
+      --sds-g-color-palette-yellow-30: #6f3400;
+      --c360-g-color-palette-yellow-30: var(--sds-g-color-palette-yellow-30);
+      /* Neutral 80 */
+      --sds-g-color-palette-neutral-80: #c9c9c9;
+      --c360-g-color-palette-neutral-80: var(--sds-g-color-palette-neutral-80);
+      /* Pink 10 */
+      --sds-g-color-palette-pink-10: #370114;
+      --c360-g-color-palette-pink-10: var(--sds-g-color-palette-pink-10);
+      /* Orange 90 */
+      --sds-g-color-palette-orange-90: #fedfd0;
+      --c360-g-color-palette-orange-90: var(--sds-g-color-palette-orange-90);
+      /* Cloud Blue 50 */
+      --sds-g-color-palette-cloud-blue-50: #107cad;
+      --c360-g-color-palette-cloud-blue-50: var(--sds-g-color-palette-cloud-blue-50);
+      /* Pink 65 */
+      --sds-g-color-palette-pink-65: #fe7298;
+      --c360-g-color-palette-pink-65: var(--sds-g-color-palette-pink-65);
+      /* Indigo 50 */
+      --sds-g-color-palette-indigo-50: #5867e8;
+      --c360-g-color-palette-indigo-50: var(--sds-g-color-palette-indigo-50);
+      /* Hot Orange 90 */
+      --sds-g-color-palette-hot-orange-90: #ffded5;
+      --c360-g-color-palette-hot-orange-90: var(--sds-g-color-palette-hot-orange-90);
+      /* Default color on focus for hyperlinks. */
+      --sds-g-link-color-focus: #014486;
+      --c360-g-link-color-focus: var(--sds-g-link-color-focus);
+      /* Blue 15 */
+      --sds-g-color-palette-blue-15: #03234d;
+      --c360-g-color-palette-blue-15: var(--sds-g-color-palette-blue-15);
+      /* Yellow 20 */
+      --sds-g-color-palette-yellow-20: #4f2100;
+      --c360-g-color-palette-yellow-20: var(--sds-g-color-palette-yellow-20);
+      /* Neutral 70 */
+      --sds-g-color-palette-neutral-70: #aeaeae;
+      --c360-g-color-palette-neutral-70: var(--sds-g-color-palette-neutral-70);
+      /* Orange 80 */
+      --sds-g-color-palette-orange-80: #ffba90;
+      --c360-g-color-palette-orange-80: var(--sds-g-color-palette-orange-80);
+      /* Cloud Blue 40 */
+      --sds-g-color-palette-cloud-blue-40: #05628a;
+      --c360-g-color-palette-cloud-blue-40: var(--sds-g-color-palette-cloud-blue-40);
+      /* Indigo 40 */
+      --sds-g-color-palette-indigo-40: #3a49da;
+      --c360-g-color-palette-indigo-40: var(--sds-g-color-palette-indigo-40);
+      /* Hot Orange 80 */
+      --sds-g-color-palette-hot-orange-80: #feb9a5;
+      --c360-g-color-palette-hot-orange-80: var(--sds-g-color-palette-hot-orange-80);
+      /* Cloud Blue 95 */
+      --sds-g-color-palette-cloud-blue-95: #eaf5fe;
+      --c360-g-color-palette-cloud-blue-95: var(--sds-g-color-palette-cloud-blue-95);
+      /* Indigo 95 */
+      --sds-g-color-palette-indigo-95: #f1f3fb;
+      --c360-g-color-palette-indigo-95: var(--sds-g-color-palette-indigo-95);
+      /* Red 15 */
+      --sds-g-color-palette-red-15: #4a0c04;
+      --c360-g-color-palette-red-15: var(--sds-g-color-palette-red-15);
+      /* Bold font-weight, use to increase emphasis. */
+      --sds-g-font-weight-bold: bold;
+      --c360-g-font-weight-bold: var(--sds-g-font-weight-bold);
+      /* Yellow 10 */
+      --sds-g-color-palette-yellow-10: #281202;
+      --c360-g-color-palette-yellow-10: var(--sds-g-color-palette-yellow-10);
+      /* Neutral 60 */
+      --sds-g-color-palette-neutral-60: #939393;
+      --c360-g-color-palette-neutral-60: var(--sds-g-color-palette-neutral-60);
+      /* Yellow 65 */
+      --sds-g-color-palette-yellow-65: #d79304;
+      --c360-g-color-palette-yellow-65: var(--sds-g-color-palette-yellow-65);
+      /* Orange 70 */
+      --sds-g-color-palette-orange-70: #fe9339;
+      --c360-g-color-palette-orange-70: var(--sds-g-color-palette-orange-70);
+      /* Cloud Blue 30 */
+      --sds-g-color-palette-cloud-blue-30: #084968;
+      --c360-g-color-palette-cloud-blue-30: var(--sds-g-color-palette-cloud-blue-30);
+      /* Indigo 30 */
+      --sds-g-color-palette-indigo-30: #2f2cb7;
+      --c360-g-color-palette-indigo-30: var(--sds-g-color-palette-indigo-30);
+      /* Hot Orange 70 */
+      --sds-g-color-palette-hot-orange-70: #ff906e;
+      --c360-g-color-palette-hot-orange-70: var(--sds-g-color-palette-hot-orange-70);
+      /* Inversed border color for UI elements. */
+      --sds-g-color-border-inverse-1: #181818;
+      --c360-g-color-border-inverse-1: var(--sds-g-color-border-inverse-1);
+      /* Neutral 50 */
+      --sds-g-color-palette-neutral-50: #747474;
+      --c360-g-color-palette-neutral-50: var(--sds-g-color-palette-neutral-50);
+      /* Orange 60 */
+      --sds-g-color-palette-orange-60: #dd7a01;
+      --c360-g-color-palette-orange-60: var(--sds-g-color-palette-orange-60);
+      /* Cloud Blue 20 */
+      --sds-g-color-palette-cloud-blue-20: #023248;
+      --c360-g-color-palette-cloud-blue-20: var(--sds-g-color-palette-cloud-blue-20);
+      /* Green 90 */
+      --sds-g-color-palette-green-90: #cdefc4;
+      --c360-g-color-palette-green-90: var(--sds-g-color-palette-green-90);
+      /* Indigo 20 */
+      --sds-g-color-palette-indigo-20: #260f8f;
+      --c360-g-color-palette-indigo-20: var(--sds-g-color-palette-indigo-20);
+      /* Hot Orange 60 */
+      --sds-g-color-palette-hot-orange-60: #ff5d2d;
+      --c360-g-color-palette-hot-orange-60: var(--sds-g-color-palette-hot-orange-60);
+      /* Neutral 40 */
+      --sds-g-color-palette-neutral-40: #5c5c5c;
+      --c360-g-color-palette-neutral-40: var(--sds-g-color-palette-neutral-40);
+      /* Alternate inversed border color for UI elements. */
+      --sds-g-color-border-inverse-2: #2e2e2e;
+      --c360-g-color-border-inverse-2: var(--sds-g-color-border-inverse-2);
+      /* Orange 50 */
+      --sds-g-color-palette-orange-50: #a96404;
+      --c360-g-color-palette-orange-50: var(--sds-g-color-palette-orange-50);
+      /* Cloud Blue 10 */
+      --sds-g-color-palette-cloud-blue-10: #001a28;
+      --c360-g-color-palette-cloud-blue-10: var(--sds-g-color-palette-cloud-blue-10);
+      /* Neutral 95 */
+      --sds-g-color-palette-neutral-95: #f3f3f3;
+      --c360-g-color-palette-neutral-95: var(--sds-g-color-palette-neutral-95);
+      /* Green 80 */
+      --sds-g-color-palette-green-80: #91db8b;
+      --c360-g-color-palette-green-80: var(--sds-g-color-palette-green-80);
+      /* Indigo 10 */
+      --sds-g-color-palette-indigo-10: #200647;
+      --c360-g-color-palette-indigo-10: var(--sds-g-color-palette-indigo-10);
+      /* Hot Orange 50 */
+      --sds-g-color-palette-hot-orange-50: #d83a00;
+      --c360-g-color-palette-hot-orange-50: var(--sds-g-color-palette-hot-orange-50);
+      /* Cloud Blue 65 */
+      --sds-g-color-palette-cloud-blue-65: #08abed;
+      --c360-g-color-palette-cloud-blue-65: var(--sds-g-color-palette-cloud-blue-65);
+      /* Indigo 65 */
+      --sds-g-color-palette-indigo-65: #8e9bef;
+      --c360-g-color-palette-indigo-65: var(--sds-g-color-palette-indigo-65);
+      /* Default color on hover for hyperlinks. */
+      --sds-g-link-color-hover: #014486;
+      --c360-g-link-color-hover: var(--sds-g-link-color-hover);
+      /* Default font-size for your application. */
+      --sds-g-font-size-base: 1rem;
+      /* Neutral 30 */
+      --sds-g-color-palette-neutral-30: #444444;
+      --c360-g-color-palette-neutral-30: var(--sds-g-color-palette-neutral-30);
+      /* Orange 40 */
+      --sds-g-color-palette-orange-40: #825101;
+      --c360-g-color-palette-orange-40: var(--sds-g-color-palette-orange-40);
+      /* Pink 15 */
+      --sds-g-color-palette-pink-15: #4b0620;
+      --c360-g-color-palette-pink-15: var(--sds-g-color-palette-pink-15);
+      /* Green 70 */
+      --sds-g-color-palette-green-70: #45c65a;
+      --c360-g-color-palette-green-70: var(--sds-g-color-palette-green-70);
+      /* Hot Orange 40 */
+      --sds-g-color-palette-hot-orange-40: #aa3001;
+      --c360-g-color-palette-hot-orange-40: var(--sds-g-color-palette-hot-orange-40);
+      /* Orange 95 */
+      --sds-g-color-palette-orange-95: #fff1ea;
+      --c360-g-color-palette-orange-95: var(--sds-g-color-palette-orange-95);
+      /* Hot Orange 95 */
+      --sds-g-color-palette-hot-orange-95: #fef1ed;
+      --c360-g-color-palette-hot-orange-95: var(--sds-g-color-palette-hot-orange-95);
+      /* Border size 1. */
+      --sds-g-sizing-border-1: 1px;
+      --c360-g-sizing-border-1: var(--sds-g-sizing-border-1);
+      /* System font stack for your application. */
+      --c360-g-font-family-display: 'ITC Avant Garde', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+      /* System font stack for your application. */
+      --c360-g-font-family-sans: 'Salesforce Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+      /* Scaled font-size that is 1 stop bigger than the base. */
+      --c360-g-font-size-1: 0.75rem;
+      /* Scaled font-size that is 2 stops bigger than the base. */
+      --c360-g-font-size-2: 0.875rem;
+      /* Scaled font-size that is 3 stops bigger than the base. */
+      --c360-g-font-size-3: 1rem;
+      /* Scaled font-size that is 4 stops bigger than the base. */
+      --c360-g-font-size-4: 1.25rem;
+      /* Scaled font-size that is 5 stops bigger than the base. */
+      --c360-g-font-size-5: 1.5rem;
+      /* Scaled font-size that is 6 stops bigger than the base. */
+      --c360-g-font-size-6: 2rem;
+      /* Scaled font-size that is 7 stops bigger than the base. */
+      --c360-g-font-size-7: 2.5rem;
+      /* Scaled font-size that is 8 stops bigger than the base. */
+      --c360-g-font-size-8: 3rem;
+      /* Scaled font-size that is 9 stops bigger than the base. */
+      --c360-g-font-size-9: 3.5rem;
+      /* Scaled font-size that is 10 stops bigger than the base. */
+      --c360-g-font-size-10: 5rem;
+  }
+  

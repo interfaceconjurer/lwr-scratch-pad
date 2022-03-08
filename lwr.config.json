@@ -1,0 +1,26 @@
+{
+    "lwc": { "modules": [
+        {
+            "dir": "$rootDir/src/modules" 
+        },
+        {
+            "name": "@salesforce-ux/c360-grid/dist/index.css",
+            "path": "./node_modules/@salesforce-ux/c360-grid/dist/index.css"
+        }
+        ]},
+    "assets": [
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/assets"
+        }
+    ],
+    "routes": [
+        {
+            "id": "home",
+            "path": "/",
+            "rootComponent": "home/app",
+            "layoutTemplate": "$layoutsDir/main.html"
+        }
+    ]
+}
