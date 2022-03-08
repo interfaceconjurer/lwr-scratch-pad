@@ -1,6 +1,6 @@
-# Static Site Boilerplate Example
+# LWR Scratch Pad - ⚗️ - experiments
 
-The **Static Site** example contains the minimum code needed to get up and running with a LWR website.
+This **Static Site** contains the minimum code needed to get up and running with a LWR experiment.
 
 ## Project Setup
 
@@ -8,40 +8,51 @@ The directory structure looks like this:
 
 ```
 scripts/
-  └── start-server.mjs  // create and start server
+  └── copy-resources.mjs                // copy useful files to assets (ie c360 stylehooks)
 src/
-  ├── assets/           // static assets
+  ├── assets/                           // static assets
   │   └── css/
   │       └── main.css
-  └── content/          // site pages
+  |       └-- hooks.custom-props.css
+  └── content/                          // site pages
   │   ├── about.md
   │   └── home.md
-  └── layouts/          // site page layouts
-      └── main_layout.njk
-lwr.config.json         // lwr configuration
-package.json            // npm packaging configuration
+  └── layouts/                          // site page layouts
+  |   └── main.html
+  └-- modules                           // lwc components
+lwr.config.json                         // lwr configuration
+package.json                            // npm packaging configuration
 ```
 
 ## Configuration
 
-The LWR server is configured in `lwr.config.json`, at the root of the project. The **Static Site** example has two routes/pages.
+The LWR server is configured in `lwr.config.json`, at the root of the project.
 
 ```json
 // lwr.config.json
 {
-    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
-    "routes": [
+    "lwc": { "modules": [
         {
-            "id": "Home",
-            "path": "/",
-            "contentTemplate": "$contentDir/home.md",
-            "layoutTemplate": "$layoutsDir/main_layout.njk"
+            "dir": "$rootDir/src/modules" 
         },
         {
-            "id": "About",
-            "path": "/about",
-            "contentTemplate": "$contentDir/about.md",
-            "layoutTemplate": "$layoutsDir/main_layout.njk"
+            "name": "@salesforce-ux/c360-grid/dist/index.css",
+            "path": "./node_modules/@salesforce-ux/c360-grid/dist/index.css"
+        }
+        ]},
+    "assets": [
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/assets"
+        }
+    ],
+    "routes": [
+        {
+            "id": "home",
+            "path": "/",
+            "rootComponent": "home/app",
+            "layoutTemplate": "$layoutsDir/main.html"
         }
     ]
 }
