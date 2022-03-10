@@ -1,7 +1,12 @@
 <template>
-    <section>
-        <h1>{comment.name}</h1>
-        <span>{comment.email}</span>
-        <p>{comment.body}</p>
+    <section grid>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1644847381469-2be5141bac71?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0Njg5MjE0MQ&ixlib=rb-1.2.1&q=85"/>
+        </figure>
+        <div grid axis="column">
+            <h1>{comment.name}</h1>
+            <span>{comment.email}</span>
+            <p>{comment.body}</p>
+        </div>
     </section>
 </template>
