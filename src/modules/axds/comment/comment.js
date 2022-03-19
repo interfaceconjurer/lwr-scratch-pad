@@ -7,7 +7,6 @@ export default class Comment extends LightningElement {
     email;
     body;
     
-    
     connectedCallback() {
         if (this.comment){
             console.log(this.comment);
