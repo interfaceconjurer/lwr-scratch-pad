@@ -2,16 +2,12 @@
     <section>
         <ul>
             <template if:true={isLoading}>
-                <axds-skeleton-comment></axds-skeleton-comment>
-                <axds-skeleton-comment></axds-skeleton-comment>
-                <axds-skeleton-comment></axds-skeleton-comment>
-                <axds-skeleton-comment></axds-skeleton-comment>
-                <axds-skeleton-comment></axds-skeleton-comment>
+                <axds-comment loading={isLoading} comment={comment}></axds-comment>
             </template>
             <template if:false={isLoading}>
                 <template for:each={state.comments} for:item="comment">
                     <li key={comment.id}>
-                        <axds-comment comment={comment}></axds-comment>
+                        <axds-comment loading={isLoading} comment={comment}></axds-comment>
                     </li>
                 </template>
             </template>

@@ -35,3 +35,23 @@ span {
 p {
     margin: 0;
 }
+
+
+/* //// SKELETON STATE /////// */
+
+.loading .loading-item {
+    background: #949494;
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    cursor: wait;
+  }
+  
+  .loading .loading-item * {
+    visibility: hidden !important;
+  }
+  
+  .loading .loading-item:empty::after,
+  .loading .loading-item *:empty::after {
+    content: "\00a0";
+  }
