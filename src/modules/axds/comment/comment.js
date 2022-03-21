@@ -1,19 +1,33 @@
 import { LightningElement, api, track } from 'lwc';
+import { presentationHelper } from '../../../utils/presentationHelper';
 
 export default class Comment extends LightningElement {
-    @api comment;
-    @api loading;
-    name;
-    email;
-    body;
     
-    connectedCallback() {
-        if (this.comment){
-            console.log(this.comment);
-            this.name = this.comment.name;
-            this.email = this.comment.email;
-            this.body = this.comment.body;
+    @api loading;
+    @api error;
+    @track presentationState = {};
+    name;
+    body;
+    email;
+
+    @api 
+    set comment(value) {
+        const comment = value;
+        if(comment) {
+            this.name = comment.name;
+            this.body = comment.body;
+            this.email = comment.email;
         }
-        
+    }
+    get comment() {
+        return {
+            name: this.name,
+            body: this.body,
+            email: this.email
+        }
+    }
+    
+    renderedCallback() {
+        presentationHelper.call(this);
     }
 }

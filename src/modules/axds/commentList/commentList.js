@@ -15,6 +15,9 @@ export default class CommentList extends LightningElement {
 
     async connectedCallback() {
         this.state.comments = await this.comments;
-        this.loading = false;
+        setTimeout(() => {
+            this.loading = false;
+        },700)
+        
     }
 }

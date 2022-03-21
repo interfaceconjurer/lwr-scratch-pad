@@ -23,12 +23,12 @@ img {
 
 h1 {
     margin: 0;
-    padding-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
 span {
     font-style: italic;
-    padding-bottom: .5rem;
+    margin-bottom: .5rem;
     display: block;
 }
 
@@ -39,19 +39,20 @@ p {
 
 /* //// SKELETON STATE /////// */
 
-.loading .loading-item {
-    background: #949494;
+[presentation="loading"] [presentation="loading-item"] {
+    background-color: rgba(231, 231, 231, 0.842);
     color: rgba(0, 0, 0, 0);
+    border-radius: 1rem;
     border-color: rgba(0, 0, 0, 0);
     user-select: none;
     cursor: wait;
   }
   
-  .loading .loading-item * {
+  [presentation="loading"] [presentation="loading-item"] * {
     visibility: hidden !important;
   }
   
-  .loading .loading-item:empty::after,
-  .loading .loading-item *:empty::after {
+  [presentation="loading"] [presentation="loading-item"]:empty::after,
+  [presentation="loading"] [presentation="loading-item"] *:empty::after {
     content: "\00a0";
   }
