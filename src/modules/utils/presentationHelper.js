@@ -1,6 +1,5 @@
 
 export function presentationHelper() {
-        // console.log(this.presentationState);
         this.presentationState = {
             loading: this.loading,
             error: this.error,
