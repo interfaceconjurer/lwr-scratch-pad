@@ -28,6 +28,10 @@ export default class Comment extends LightningElement {
     }
     
     renderedCallback() {
+        this.presentationState = {
+            loading: this.loading,
+            error: this.error,
+        }
         presentationHelper.call(this);
     }
 }

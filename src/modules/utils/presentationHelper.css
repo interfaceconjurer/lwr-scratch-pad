@@ -1,4 +1,4 @@
-[presentation="loading"] [presentation="loading-item"] {
+[presentation-provider="loading"] [presentation="loading-item"] {
     background-color: rgba(231, 231, 231, 0.842);
     color: rgba(0, 0, 0, 0);
     border-radius: 1rem;
@@ -7,11 +7,11 @@
     cursor: wait;
   }
   
-  [presentation="loading"] [presentation="loading-item"] * {
+  [presentation-provider="loading"] [presentation="loading-item"] * {
     visibility: hidden !important;
   }
   
-  [presentation="loading"] [presentation="loading-item"]:empty::after,
-  [presentation="loading"] [presentation="loading-item"] *:empty::after {
+  [presentation-provider="loading"] [presentation="loading-item"]:empty::after,
+  [presentation-provider="loading"] [presentation="loading-item"] *:empty::after {
     content: "\00a0";
   }

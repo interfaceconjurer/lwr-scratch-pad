@@ -17,11 +17,10 @@ section {
     width: 100%;
 }
 
-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+.image {
+    --axds-image-height: 100px;
+    --axds-image-width: 100px;
+    --axds-image-border-radius: 50%;
 }
 
 h1 {
