@@ -15,6 +15,7 @@ export default class CommentList extends LightningElement {
 
     async connectedCallback() {
         this.state.comments = await this.comments;
+        // set timeout is a hack to see the skeleton on fast loads // :REMOVE
         setTimeout(() => {
             this.loading = false;
         },500)
