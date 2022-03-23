@@ -9,6 +9,7 @@ export default class Comment extends LightningElement {
     name;
     body;
     email;
+    image;
 
     @api 
     set comment(value) {
@@ -17,13 +18,15 @@ export default class Comment extends LightningElement {
             this.name = comment.name;
             this.body = comment.body;
             this.email = comment.email;
+            this.image = comment.image;
         }
     }
     get comment() {
         return {
             name: this.name,
             body: this.body,
-            email: this.email
+            email: this.email,
+            image: this.image
         }
     }
     
