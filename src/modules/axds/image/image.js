@@ -7,26 +7,31 @@ export default class Image extends LightningElement {
     @api imageSrc;
     @api loading;
     imageLoaded = false;
-    notReadyToLoad = true;
+    imageLoading = true;
     error;
     @track presentationState = {};
 
     handleLoading() {
-        this.imageLoaded = false;
-        if(!this.loading && !this.imageLoaded) this.notReadyToLoad = false;
+        this.imageLoaded = true;
+        this.imageLoading = this.getImageLoadingState();
         this.presentationState = {
-            loading: this.notReadyToLoad,
+            loading: this.imageLoading,
             error: this.error,
         }
         presentationHelper.call(this);
     }
 
     renderedCallback() {
-        if(this.loading || !this.imageLoaded) this.notReadyToLoad = true;
         this.presentationState = {
-            loading: this.notReadyToLoad,
+            loading: this.imageLoading,
             error: this.error,
         }
         presentationHelper.call(this);
+    }
+
+    getImageLoadingState() {
+        if(!this.loading && this.imageLoaded) this.imageLoading = false;
+        return this.imageLoading;
+
     }
 }
