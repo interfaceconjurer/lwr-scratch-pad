@@ -17,7 +17,7 @@ export default class CommentList extends LightningElement {
         this.state.comments = await this.comments;
         setTimeout(() => {
             this.loading = false;
-        },1400)
+        },500)
         
     }
 }

@@ -12,6 +12,7 @@ export default class Image extends LightningElement {
     @track presentationState = {};
 
     handleLoading() {
+        console.log('fired')
         this.imageLoaded = true;
         this.imageLoading = this.getImageLoadingState();
         this.presentationState = {
