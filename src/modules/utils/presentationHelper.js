@@ -1,6 +1,6 @@
 
 export function presentationHelper() {
-        
+        // PRESENTATION TYPE: SKELETON LOADING ///
         const parentElement = this.template.childNodes[0];
         if(this.presentationState.loading){
             parentElement.setAttribute('presentation-provider', 'loading');
@@ -16,5 +16,7 @@ export function presentationHelper() {
                 item.setAttribute('presentation', 'base');
             });
         }
-    
+    // TODO: PRESENTATION TYPE: SPINNER LOADING ///
+
+    // TODO: PRESENTATION TYPE: ERROR ///
 }
