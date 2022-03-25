@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf build && rm -rf __lwr_cache__",
+    "lint": "npx --yes pretty-quick",
     "build": "node ./scripts/copy-resources.mjs",
     "dev": "lwr serve",
     "start": "lwr serve --mode prod",
