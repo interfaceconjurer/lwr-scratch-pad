@@ -5,7 +5,7 @@ This Repo explores and architecture for component states for loading and error t
 
 How to use:
 presentationHelper.js
-```
+```js
 export function presentationHelper() {
         // PRESENTATION TYPE: SKELETON LOADING ///
         const parentElement = this.template.childNodes[0];
@@ -27,7 +27,7 @@ export function presentationHelper() {
 ```
 This function provides the presentation state for the skeleton. It grabs the parent HTML element and applies the attribute “presentation-provider=‘loading’” if presentationState.loading is true. This creates the skeleton styling for all innerHTML elements with attribute “presentation”. All HTML elements in the base component that need skeleton styling need this attribute present 
 
-```
+```html
 <template>
     <section grid>
         <axds-image loading={loading} class="image" image-src={image}></axds-image>
@@ -39,11 +39,11 @@ This function provides the presentation state for the skeleton. It grabs the par
     </section>
 </template>
 ```
-In this base component, <section> will get the “presentation-provider” attribute added by the function since its the parent HTML element of the component. The <h1>, <span>, and <p> will get skeleton styling since they have the “presentation” attribute added. 
+In this base component, `<section>` will get the “presentation-provider” attribute added by the function since its the parent HTML element of the component. The `<h1>`, `<span>`, and `<p>` will get skeleton styling since they have the “presentation” attribute added. 
 
 
 presentationHelper.css
-```
+```css
 [presentation-provider="loading"] [presentation="loading-item"] {
     background: linear-gradient(110deg, #ececec 18%, #f5f5f5 40%, #ececec 69%);
     color: rgba(0, 0, 0, 0);
@@ -74,22 +74,22 @@ The skeleton styles are adaptable to the component’s styling. The skeleton sty
 
 How to use it:
 Import presentationHelper into your component’s js file
-```
+```js
 import { presentationHelper } from '../../../utils/presentationHelper';
 ```
 Import presentationHelper.css into your component’s css file
-```
+```css
 /* //// 🚀 PRESENTATION STATE 🚀 /////// */
 @import '../../utils/presentationHelper.css';
 ```
 Declare a presentation stage with loading and error
-```
+```js
 @api loading;
 @api error;
 @track presentationState = {};
 ```
 Pass presentationState to presentationHelper with the values of “loading” and “error”
-```
+```js
 this.presentationState = {
             loading: this.loading,
             error: this.error,
@@ -98,7 +98,7 @@ presentationHelper.call(this);
 ```
 If this.loading is true, the base component will render a skeleton until the presentationHelper is called and this.loading is false. 
 
-You will notice that <axds-image> has its own presentationHelper. This is due to the rendering of an image has two sides, the loading of the data (image src) and the browser rending that image. Only after the image is fully painted by the browser do you want the skeleton to go away. Due to this <axds-image> has a slightly more complex loading state. 
+You will notice that `<axds-image>` has its own presentationHelper. This is due to the rendering of an image has two sides, the loading of the data (image src) and the browser rending that image. Only after the image is fully painted by the browser do you want the skeleton to go away. Due to this `<axds-image>` has a slightly more complex loading state. 
 
 
 
