@@ -1,18 +1,20 @@
 <template>
-    <section>
-        <ul>
-            <template if:true={isLoading}>
-                <axds-comment loading={isLoading}></axds-comment>
-                <axds-comment loading={isLoading}></axds-comment>
-                <axds-comment loading={isLoading}></axds-comment>
-                <axds-comment loading={isLoading}></axds-comment>
-                <axds-comment loading={isLoading}></axds-comment>
-            </template>
-            <template if:false={isLoading}>
-                <template for:each={state.comments} for:item="comment">
-                    <axds-comment key={comment.id} loading={isLoading} comment={comment}></axds-comment>
-                </template>
-            </template>
-        </ul>
-    </section>
+  <section>
+    <ul>
+      <template if:true="{isLoading}">
+        <axds-comment loading></axds-comment>
+        <axds-comment loading></axds-comment>
+        <axds-comment loading></axds-comment>
+        <axds-comment loading></axds-comment>
+        <axds-comment loading></axds-comment>
+      </template>
+      <template if:false="{isLoading}">
+        <template for:each="{state.comments}" for:item="comment">
+          <li key="{comment.id}">
+            <axds-comment comment="{comment}"></axds-comment>
+          </li>
+        </template>
+      </template>
+    </ul>
+  </section>
 </template>

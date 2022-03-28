@@ -14,15 +14,13 @@ export default class Comment extends LightningElement {
   set comment(value) {
     const comment = value
     if (comment) {
-      const id = Math.ceil(Math.random() * 100)
-      const image = `https://source.unsplash.com/random/120x120/?${id}`
-
       this.name = comment.name
       this.body = comment.body
       this.email = comment.email
-      this.image = image
+      this.image = comment.image
     }
   }
+
   get comment() {
     return {
       name: this.name,
@@ -37,7 +35,6 @@ export default class Comment extends LightningElement {
       loading: this.loading,
       error: this.error,
     }
-
     presentationHelper.call(this)
   }
 }
