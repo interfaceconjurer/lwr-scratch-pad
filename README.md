@@ -1,7 +1,8 @@
 # Skeleton POC - ☠️⚗️ - experiments
 
 repo: https://github.com/interfaceconjurer/lwr-scratch-pad
-This Repo explores and architecture for component states for loading and error to be handled in a util method separate from the component. This cleans the base component reducing complexity and creates reusable functions that other components can use. The css for the skeleton is driven by the markup of the base component. The styles are reusable across any component with markup provides attributes for the presentationHelper
+
+This Repo explores and architecture for component states where loading and error are be handled in a util function separate from the component. This cleans the base component reducing complexity and creates reusable functions that other components can use. The css for the skeleton is driven by the markup provided by the base component. The styles are reusable across any component with markup that provides the correct attributes for the presentationHelper
 
 How to use:
 presentationHelper.js
@@ -25,7 +26,7 @@ export function presentationHelper() {
         }
 }
 ```
-This function provides the presentation state for the skeleton. It grabs the parent HTML element and applies the attribute “presentation-provider=‘loading’” if presentationState.loading is true. This creates the skeleton styling for all innerHTML elements with attribute “presentation”. All HTML elements in the base component that need skeleton styling need this attribute present 
+This function provides the presentation for the skeleton. It grabs the parent HTML element and applies the attribute “presentation-provider=‘loading’” if presentationState.loading is true. This creates the skeleton styling for all innerHTML elements with attribute “presentation” present. All HTML elements in the base component that need skeleton styling need this attribute present 
 
 ```html
 <template>
@@ -39,7 +40,7 @@ This function provides the presentation state for the skeleton. It grabs the par
     </section>
 </template>
 ```
-In this base component, `<section>` will get the “presentation-provider” attribute added by the function since its the parent HTML element of the component. The `<h1>`, `<span>`, and `<p>` will get skeleton styling since they have the “presentation” attribute added. 
+In this base component, `<section>` will get the `“presentation-provider”` attribute added by the function since its the parent HTML element of the component. The `<h1>`, `<span>`, and `<p>` will get skeleton styling since they have the `presentation` attribute added. 
 
 
 presentationHelper.css
@@ -70,7 +71,7 @@ presentationHelper.css
     }
   }
 ```
-The skeleton styles are adaptable to the component’s styling. The skeleton styles will leverage the layout you have already structured in your base components. If an HTML element is tagged with “presentation” it will leverage the layout of that HTML element and create a skeleton presentation in that space. 
+The skeleton styles are adaptable to the component’s styling. The skeleton styles will leverage the layout you have already structured in your base components. If an HTML element has attribute `presentation` the css will leverage the layout of that HTML element and create a skeleton presentation in that space. 
 
 How to use it:
 Import presentationHelper into your component’s js file
@@ -96,17 +97,9 @@ this.presentationState = {
         }
 presentationHelper.call(this);
 ```
-If this.loading is true, the base component will render a skeleton until the presentationHelper is called and this.loading is false. 
+If `this.loading` is `true`, the base component will render a skeleton until the presentationHelper is called and `this.loading` is `false`. 
 
-You will notice that `<axds-image>` has its own presentationHelper. This is due to the rendering of an image has two sides, the loading of the data (image src) and the browser rending that image. Only after the image is fully painted by the browser do you want the skeleton to go away. Due to this `<axds-image>` has a slightly more complex loading state. 
-
-
-
-
-
-## LWR Scratch Pad - ⚗️ - experiments
-
-This **Static Site** contains the minimum code needed to get up and running with a LWR experiment.
+You will notice that `<axds-image>` has its own presentationHelper. This is due to the rendering of an image having two sides, the loading of the data (image src) and the browser rending/painting that image. Only after the image is fully painted by the browser do you want the skeleton to go away. Due to this `<axds-image>` has a slightly more complex loading state. 
 
 ### Project Setup
 
