@@ -18,10 +18,6 @@ export default class Image extends LightningElement {
       error: this.error,
     }
 
-    this.template
-      .querySelectorAll('img')
-      .forEach((i) => i.classList.add('loaded'))
-
     presentationHelper.call(this)
   }
 

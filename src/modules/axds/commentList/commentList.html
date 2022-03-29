@@ -1,19 +1,10 @@
 <template>
   <section>
     <ul>
-      <template if:true={loading}>
-        <template for:each={skeleton} for:item="i">
-          <li key={i}>
-            <axds-comment loading></axds-comment>
-          </li>
-        </template>
-      </template>
-      <template if:false={loading}>
-        <template for:each={comments} for:item="comment">
-          <li key={comment.id}>
-            <axds-comment comment={comment}></axds-comment>
-          </li>
-        </template>
+      <template for:each={data} for:item="comment">
+        <li key={comment.id}>
+          <axds-comment loading={loading} comment={comment}></axds-comment>
+        </li>
       </template>
     </ul>
   </section>
