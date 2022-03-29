@@ -8,10 +8,10 @@
         <axds-comment loading></axds-comment>
         <axds-comment loading></axds-comment>
       </template>
-      <template if:false="{isLoading}">
-        <template for:each="{state.comments}" for:item="comment">
-          <li key="{comment.id}">
-            <axds-comment comment="{comment}"></axds-comment>
+      <template if:false={isLoading}>
+        <template for:each={state.comments} for:item="comment">
+          <li key={comment.id}>
+            <axds-comment comment={comment}></axds-comment>
           </li>
         </template>
       </template>
