@@ -3,5 +3,10 @@
   "tabWidth": 2,
   "semi": false,
   "singleQuote": true,
-  "parser": "lwc"
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": { "parser": "lwc" }
+    }
+  ]
 }
