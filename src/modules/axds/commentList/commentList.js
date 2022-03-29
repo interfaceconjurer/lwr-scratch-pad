@@ -1,24 +1,14 @@
 import { LightningElement, api, track } from 'lwc'
 
 export default class CommentList extends LightningElement {
-  @track state = {}
+  @api loading
   @api comments
-  loading = true
+  @api skeletons = '5'
 
-  constructor() {
-    super()
-
-    this.state.comments = []
-  }
-
-  get isLoading() {
-    return this.loading
-  }
-
-  async connectedCallback() {
-    this.state.comments = await this.comments
-
-    // set timeout is a hack to see the skeleton on fast loads // :REMOVE
-    setTimeout(() => (this.loading = false), 1000)
+  get skeleton() {
+    const output = Array(Number(this.skeletons))
+      .fill()
+      .map((element, index) => index)
+    return output
   }
 }

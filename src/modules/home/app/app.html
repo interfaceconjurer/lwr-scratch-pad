@@ -1,7 +1,11 @@
 <template>
   <main grid>
     <section size="1:1">
-      <axds-comment-list loading={loading} comments={data}></axds-comment-list>
+      <axds-comment-list
+        skeletons="3"
+        loading={loading}
+        comments={data}
+      ></axds-comment-list>
     </section>
   </main>
 </template>

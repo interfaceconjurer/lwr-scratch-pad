@@ -1,19 +1,24 @@
 import { LightningElement } from 'lwc'
 
 export default class App extends LightningElement {
+  data = []
+  loading = true
+
   async fetchData() {
     const response = await fetch(
       'https://jsonplaceholder.typicode.com/comments?postId=1'
     )
     const data = await response.json()
-    data.forEach((i) => {
-      i.image =
-        'https://images.unsplash.com/photo-1644847381469-2be5141bac71?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0Njg5MjE0MQ&ixlib=rb-1.2.1&q=85'
-    })
-    return await data
+    data.forEach(
+      (i, index) =>
+        (i.image = `https://source.unsplash.com/random/150x150/?${index}`)
+    )
+    return data
   }
 
-  get data() {
-    return this.fetchData()
+  async connectedCallback() {
+    this.data = await this.fetchData()
+    await new Promise((resolve) => setTimeout(resolve, 1000)) // delay for 1 second to show loading (remove)
+    this.loading = false
   }
 }
