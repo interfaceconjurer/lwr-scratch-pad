@@ -18,21 +18,8 @@
   content: '\00a0';
 }
 
-[presentation-provider='base'] [presentation='base'] {
-  animation: fade-in 0.3s forwards;
-}
-
 @keyframes shine {
   to {
     background-position-x: -200%;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

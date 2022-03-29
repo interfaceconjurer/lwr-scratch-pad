@@ -17,8 +17,9 @@ export default class App extends LightningElement {
   }
 
   async connectedCallback() {
-    this.data = await this.fetchData()
     await new Promise((resolve) => setTimeout(resolve, 1000)) // delay for 1 second to show loading (remove)
+
+    this.data = await this.fetchData()
     this.loading = false
   }
 }
