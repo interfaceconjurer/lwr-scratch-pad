@@ -2,11 +2,11 @@
   <section>
     <ul>
       <template if:true={loading}>
-        <template for:each={skeleton} for:item="i">
-          <li key={i}>
-            <axds-comment loading></axds-comment>
-          </li>
-        </template>
+          <axds-comment loading></axds-comment>
+          <axds-comment loading></axds-comment>
+          <axds-comment loading></axds-comment>
+          <axds-comment loading></axds-comment>
+          <axds-comment loading></axds-comment>
       </template>
       <template if:false={loading}>
         <template for:each={comments} for:item="comment">
