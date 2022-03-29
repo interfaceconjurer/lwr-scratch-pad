@@ -9,6 +9,7 @@ export default class CommentList extends LightningElement {
     const output = Array(Number(this.skeletons))
       .fill()
       .map((element, index) => index)
+
     return output
   }
 }

@@ -3,7 +3,9 @@
     <ul>
       <template if:true={loading}>
         <template for:each={skeleton} for:item="i">
-          <axds-comment key={i} loading></axds-comment>
+          <li key={i}>
+            <axds-comment loading></axds-comment>
+          </li>
         </template>
       </template>
       <template if:false={loading}>
