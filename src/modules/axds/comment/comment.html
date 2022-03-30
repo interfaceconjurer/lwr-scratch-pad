@@ -1,6 +1,10 @@
 <template>
   <section grid>
-    <axds-image loading={loading} class="image" image-src={comment.image}></axds-image>
+    <axds-image
+      loading={loading}
+      class="image"
+      image-src={comment.image}
+    ></axds-image>
     <div grid size="auto" axis="column" align-items="center">
       <h1 presentation>{comment.name}</h1>
       <span presentation>{comment.email}</span>

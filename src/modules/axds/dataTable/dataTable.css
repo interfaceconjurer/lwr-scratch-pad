@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+:host {
+  border-radius: var(--c360-g-radius-border-2);
+  display: block;
+  margin: 10px;
+  box-shadow: var(--c360-g-shadow-1);
+  overflow-x: auto;
+  position: relative;
+}
+
+table {
+  min-width: 100%;
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+th {
+  padding: var(--c360-g-spacing-3);
+  text-align: left;
+  font-size: var(--c360-g-font-size-2);
+  font-weight: 600;
+  color: var(--c360-g-color-palette-neutral-10);
+}
+
+td {
+  white-space: nowrap;
+  padding: var(--c360-g-spacing-3);
+  text-align: left;
+  font-size: var(--c360-g-font-size-2);
+  color: var(--c360-g-color-palette-neutral-30);
+}
+
+th:first-child,
+td:first-child {
+  padding-left: var(--c360-g-spacing-4);
+}
+
+th:last-child,
+td:last-child {
+  padding-right: var(--c360-g-spacing-4);
+}
+
+tbody {
+  border-color: var(--c360-g-color-palette-neutral-90);
+  border-top-width: 1px;
+}
+
+tbody tr:last-child td {
+  padding-bottom: var(--c360-g-spacing-4);
+}
+
+thead {
+  background: var(--c360-g-color-palette-neutral-95);
+}
+
+.icon {
+  flex: none;
+  color: var(--c360-g-color-palette-neutral-80);
+  display: block;
+  line-height: 1;
+  padding: 4px;
+}
+
+.icon svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  vertical-align: top;
+}
+
+/* Utilities */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.relative {
+  display: relative;
+}
