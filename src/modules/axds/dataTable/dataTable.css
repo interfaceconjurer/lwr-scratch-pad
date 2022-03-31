@@ -94,8 +94,12 @@ tbody tr:last-child .cell {
   width: 48px;
   min-width: 48px;
   height: 48px;
-  border-right: 1px solid var(--c360-g-color-palette-neutral-90);
   border-box: content-box;
+  border-right: 1px solid var(--c360-g-color-palette-neutral-90);
+}
+
+th.icon-only {
+  border-right-color: transparent;
 }
 
 .icon-only .cell {
@@ -108,7 +112,7 @@ tbody tr:last-child .cell {
   justify-content: center;
 }
 
-.icon-only .cell svg {
+svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
@@ -132,6 +136,16 @@ input.input--wide {
 .button {
   font-weight: 700;
   font-size: var(--c360-g-font-size-1);
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.5rem;
+  color: var(--c360-g-color-palette-blue-50);
+  border-radius: var(--c360-g-radius-border-2);
+  padding: var(--c360-g-spacing-1) var(--c360-g-spacing-2);
+}
+
+.button:hover {
+  background: var(--c360-g-color-palette-blue-95);
 }
 
 /* Utilities */
