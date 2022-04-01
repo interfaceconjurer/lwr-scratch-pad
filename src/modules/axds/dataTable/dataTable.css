@@ -142,6 +142,12 @@ input.input--wide {
   color: var(--c360-g-color-palette-blue-50);
   border-radius: var(--c360-g-radius-border-2);
   padding: var(--c360-g-spacing-1) var(--c360-g-spacing-2);
+  transition: background 0.3s;
+}
+
+.button--full-width {
+  width: 100%;
+  justify-content: center;
 }
 
 .button:hover {
