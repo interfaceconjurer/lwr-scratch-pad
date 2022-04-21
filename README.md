@@ -172,5 +172,3 @@ To start the project in a different mode:
 -   dev: `yarn dev`
 -   compat: `yarn start:compat`
 -   prod-compat: `yarn start:prod-compat`
-
-test
