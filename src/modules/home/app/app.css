@@ -1,9 +1,5 @@
-@import "@salesforce-ux/c360-grid/dist/index.css";
-
-h1 {
-    color: var(--c360-g-color-palette-blue-30);
-}
+@import '@salesforce-ux/c360-grid/dist/index.css';
 
 main {
-    padding: 2rem;
+  padding: 2rem;
 }

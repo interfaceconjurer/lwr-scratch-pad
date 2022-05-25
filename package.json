@@ -7,6 +7,7 @@
   "scripts": {
     "postinstall": "node ./scripts/copy-resources.mjs",
     "clean": "rm -rf build && rm -rf __lwr_cache__",
+    "lint": "npx --yes prettier --write src",
     "dev": "lwr serve",
     "start": "lwr serve --mode prod",
     "start:compat": "lwr serve --mode compat",

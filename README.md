@@ -1,8 +1,9 @@
-# LWR Scratch Pad - ⚗️ - experiments
+# LWR Scratch Pad - ☠️⚗️
 
-This **Static Site** contains the minimum code needed to get up and running with a LWR experiment.
+This Repo is a template for .....
 
-## Project Setup
+
+### Project Setup
 
 The directory structure looks like this:
 
@@ -12,7 +13,7 @@ scripts/
 src/
   ├── assets/                           // static assets
   │   └── css/
-  │       └── main.css
+  │       └── preflight.css
   |       └-- hooks.custom-props.css
   └── content/                          // site pages
   │   ├── about.md
@@ -20,11 +21,15 @@ src/
   └── layouts/                          // site page layouts
   |   └── main.html
   └-- modules                           // lwc components
+      └── components
+      └── home
+          └── app.js                    // root app file
+      └── utils
 lwr.config.json                         // lwr configuration
 package.json                            // npm packaging configuration
 ```
 
-## Configuration
+### Configuration
 
 The LWR server is configured in `lwr.config.json`, at the root of the project.
 
@@ -58,7 +63,7 @@ The LWR server is configured in `lwr.config.json`, at the root of the project.
 }
 ```
 
-## Running the Project
+### Running the Project
 
 ```bash
 yarn install
