@@ -1,29 +1,31 @@
 {
-    "lwc": { "modules": [
-        {
-            "dir": "$rootDir/src/modules" 
-        },
-        {
-            "name": "@salesforce-ux/c360-grid/dist/index.css",
-            "path": "./node_modules/@salesforce-ux/c360-grid/dist/index.css"
-        },
-        {
-            "npm": "appx-design-system"
-        }
-    ]},
-    "assets": [
-        {
-            "alias": "assetsDir",
-            "dir": "$rootDir/src/assets",
-            "urlPath": "/assets"
-        }
-    ],
-    "routes": [
-        {
-            "id": "home",
-            "path": "/",
-            "rootComponent": "home/app",
-            "layoutTemplate": "$layoutsDir/main.html"
-        }
+  "lwc": {
+    "modules": [
+      {
+        "dir": "$rootDir/src/modules"
+      },
+      {
+        "name": "@salesforce-ux/c360-grid/dist/index.css",
+        "path": "./node_modules/@salesforce-ux/c360-grid/dist/index.css"
+      },
+      {
+        "npm": "@oneappexchange/appx-design-system"
+      }
     ]
+  },
+  "assets": [
+    {
+      "alias": "assetsDir",
+      "dir": "$rootDir/src/assets",
+      "urlPath": "/assets"
+    }
+  ],
+  "routes": [
+    {
+      "id": "home",
+      "path": "/",
+      "rootComponent": "home/app",
+      "layoutTemplate": "$layoutsDir/main.html"
+    }
+  ]
 }
