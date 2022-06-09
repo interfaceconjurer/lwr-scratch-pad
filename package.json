@@ -14,7 +14,7 @@
     "start:prod-compat": "lwr serve --mode prod-compat"
   },
   "dependencies": {
-    "@oneappexchange/appx-design-system": "0.0.1-alpha.0",
+    "@oneappexchange/appx-design-system": "0.0.1-alpha.1",
     "@salesforce-ux/c360-grid": "^0.1.5",
     "@salesforce-ux/c360-styling-hooks": "^0.2.2",
     "cpx": "^1.5.0",

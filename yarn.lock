@@ -318,62 +318,6 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@devforce/trailhead-client-api@^1.1.0":
-  version "1.7.1"
-  resolved "https://npm.pkg.github.com/download/@devforce/trailhead-client-api/1.7.1/65c657ce1febff6962e4a879ed5143801f66e9653b870c90e7789ffcf3208229#0dff2347342a6df4631e90193ef38e1d64742091"
-  integrity sha512-60TuZnwdKLaHnVyaWI3/UXQkMfy5DOvJq/ocwmRAiIziMC/Lq/67ZLx30nrvL1E8XghEyOyOLIn+l+Gn1cmraQ==
-  dependencies:
-    "@devforce/trailhead-client-env" "^1.6.4"
-    "@devforce/trailhead-client-fetch" "^1.7.1"
-    "@devforce/trailhead-client-logger" "^1.7.1"
-
-"@devforce/trailhead-client-apollo@^1.2.1":
-  version "1.7.1"
-  resolved "https://npm.pkg.github.com/download/@devforce/trailhead-client-apollo/1.7.1/72b3c5b5fa2ed51a3beebcb89c80e4ba4bbf6e13728da1198d5feea47f2d1800#7a5fa28191f2deba150da0c47ce28110fd380eb0"
-  integrity sha512-YGMRvujL0oRfypl47gCIYCKtd0Hcaf/Fu58KfKE83WvHsmzli5/poAWkxPMZ2REkkBupzqKu2p0fNwbSzxqetg==
-  dependencies:
-    "@apollo/client" "^3.5.10"
-    "@devforce/trailhead-client-auth" "^1.7.1"
-    "@devforce/trailhead-client-env" "^1.6.4"
-    "@devforce/trailhead-client-fetch" "^1.7.1"
-    "@devforce/trailhead-client-locale" "^1.7.1"
-    "@devforce/trailhead-client-logger" "^1.7.1"
-    graphql "^16.3.0"
-
-"@devforce/trailhead-client-auth@^1.7.1":
-  version "1.7.1"
-  resolved "https://npm.pkg.github.com/download/@devforce/trailhead-client-auth/1.7.1/97abad11c30184c1d1b905214e3b5ae2abbc3e43a6cf842975172ee78c3c0b75#2b21bfcd6c56f369596ddb98889792de7bbb90b3"
-  integrity sha512-OjNj4hwJ0xH0w/3hjInjJu7vtgUQKs8PCNIaEDpgUfuvoCEOpZpBkDEBu80qL9uLSusnEwUihOUzTQYLhUbQ4g==
-  dependencies:
-    "@devforce/trailhead-client-logger" "^1.7.1"
-
-"@devforce/trailhead-client-env@^1.6.4":
-  version "1.6.4"
-  resolved "https://npm.pkg.github.com/download/@devforce/trailhead-client-env/1.6.4/0ae3574f9bdf7241819d6b41bc13e6ab4c688ac6426f929e3d26cc24b8a40188#9f6542d0d1c11000afe208e4619090f4942264b8"
-  integrity sha512-3NuESwz0dHrYdvjaoV4ht2mRJQgz9nF4sUNNYFv+L0IVwfVrQTSW7c3dozaMA0NagvR91VOHiT8GoCxYEnX5aw==
-
-"@devforce/trailhead-client-fetch@^1.7.1":
-  version "1.7.1"
-  resolved "https://npm.pkg.github.com/download/@devforce/trailhead-client-fetch/1.7.1/942b397b6c1dd4864e48c2c1413132ab5774193fb696962a5720649dd0a4b1e2#f448d434b5dc2269617ac4f08d6f030ca1ab4f3a"
-  integrity sha512-+Eok3KU17zpGR0mD2/YjXy+HZtbnFQyfryaHh425Grz0MknvoOOwCzlxhgIxJedJsD4FGaY1xVnzAnpHWRjn2A==
-  dependencies:
-    "@devforce/trailhead-client-logger" "^1.7.1"
-
-"@devforce/trailhead-client-locale@^1.2.1", "@devforce/trailhead-client-locale@^1.7.1":
-  version "1.7.1"
-  resolved "https://npm.pkg.github.com/download/@devforce/trailhead-client-locale/1.7.1/485c5ebfd6c428dd2ed4bb88749565a397b6331eca70ac6829514ee5a7ac078c#2a39cd7bbeb7186c55ce5aa30198c3934ee01d15"
-  integrity sha512-F5HnlV8L90R7ZVH7wm7sV2Dgxvzw2QIxaZbgW46IEHBf/4/V9InRqxDZ1oZYOPQEA1bQA473rVehNeT2lB0QWA==
-  dependencies:
-    "@devforce/trailhead-client-logger" "^1.7.1"
-    i18n-js "^3.8.0"
-
-"@devforce/trailhead-client-logger@^1.7.1":
-  version "1.7.1"
-  resolved "https://npm.pkg.github.com/download/@devforce/trailhead-client-logger/1.7.1/c702e69332be1305a7622bba732e462b5584ffd23617545acd9f43699267d34b#79e5b4e0cd7e78c47e7cab41e88ed48a937aed22"
-  integrity sha512-zWlqSThcUV4RZQSJLboP1IKo2BN4zhgDWWbIvJk7uWFwhZcrJf2+Fq5tSOPk06GWIhRWDUWNvqI12jlJHZ2b1Q==
-  dependencies:
-    "@devforce/trailhead-client-env" "^1.6.4"
-
 "@esbuild-plugins/node-modules-polyfill@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@esbuild-plugins/node-modules-polyfill/-/node-modules-polyfill-0.0.2.tgz#1a3f956cff4b4833ff1a0f8b955de1250c7f4bf6"
@@ -834,14 +778,71 @@
     "@lwrjs/diagnostics" "0.6.0-alpha.14"
     "@lwrjs/shared-utils" "0.6.0-alpha.14"
 
-"@oneappexchange/appx-design-system@0.0.1-alpha.0":
-  version "0.0.1-alpha.0"
-  resolved "https://npm.pkg.github.com/download/@oneappexchange/appx-design-system/0.0.1-alpha.0/6e1b76006b9faffcccc506e81c763ff612d1da0c90190a282a59080cd6620ff0#a5423447186ff147b4942147f97670a95ef15eb9"
-  integrity sha512-eYoQHuyrcdYlN77tF/iaFbdzfo4+LWnynoTnufjM0p0qN8L1qUutjE5aQANZgooTaJzoD89KecoJjV4Wdc8vVQ==
+"@oneappexchange/appx-design-system@0.0.1-alpha.1":
+  version "0.0.1-alpha.1"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/appx-design-system/0.0.1-alpha.1/d91d5b09f385f617798d6e757ae8b4590606e091df1a74881a5d660272f04c5e#d27e1e75ede62db402d4d07d4f2bc5c8fe863419"
+  integrity sha512-EMZX/WOoMXDWiEHS8FH/u6iBkHuVZjP3soS8BqfFY54Y6V+27AqOh18C12QmYjJok6+YdoguR99ZB/eg5Qqyfg==
   dependencies:
-    "@devforce/trailhead-client-api" "^1.1.0"
-    "@devforce/trailhead-client-apollo" "^1.2.1"
-    "@devforce/trailhead-client-locale" "^1.2.1"
+    "@oneappexchange/axds-client-api" latest
+    "@oneappexchange/axds-client-apollo" latest
+    "@oneappexchange/axds-client-locale" latest
+
+"@oneappexchange/axds-client-api@latest":
+  version "2.0.0-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/axds-client-api/2.0.0-alpha.0/83f2ea3fa47d7c3fa96cfeb1eb5f6f0393c3ac64ed406503994245d3d22f9dfd#d3bc5d8e017f827fe2b39ccc16e400df96881890"
+  integrity sha512-LbBvAxlqIByhN44vahx7KFZtUF5G7w6qZlq1XsvTuvZ1lv33qCjWWp6Ub0n4oZFvx4PJqasv7xvkbzjEtsD0lg==
+  dependencies:
+    "@oneappexchange/axds-client-env" "^2.0.0-alpha.0"
+    "@oneappexchange/axds-client-fetch" "^2.0.0-alpha.0"
+    "@oneappexchange/axds-client-logger" "^2.0.0-alpha.0"
+
+"@oneappexchange/axds-client-apollo@latest":
+  version "2.0.0-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/axds-client-apollo/2.0.0-alpha.0/3140a6a77e20ec781646aba12333d2b2db3359d85e1bc3585cb3565408e6efbf#513a5f7b341347dccb80adba8cf0506cb173f990"
+  integrity sha512-ntelsqhNAduNIPpT0357Lfjl80r0v9ut2kJwDnMR7X+x5uDNqx9X3bqmFhDJy83YAoO1BUDKwNCBOx1jQKDgCw==
+  dependencies:
+    "@apollo/client" "^3.5.10"
+    "@oneappexchange/axds-client-auth" "^2.0.0-alpha.0"
+    "@oneappexchange/axds-client-env" "^2.0.0-alpha.0"
+    "@oneappexchange/axds-client-fetch" "^2.0.0-alpha.0"
+    "@oneappexchange/axds-client-locale" "^2.0.0-alpha.0"
+    "@oneappexchange/axds-client-logger" "^2.0.0-alpha.0"
+    graphql "^16.3.0"
+
+"@oneappexchange/axds-client-auth@^2.0.0-alpha.0":
+  version "2.0.0-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/axds-client-auth/2.0.0-alpha.0/b15593eb14b25fa42d1022650f12f71bcdb0d678ca3b79ef7f8b7924e4a795ae#101bb9972bbe8d14d0526375f73f3b62690954a7"
+  integrity sha512-LQLSpPy1skLY2mr1tsEj6bwRD+OdR8ITOw2CD4SzTwZ8JXZKTV8rVOOZAP/ywxt7X2RRp7Ya5zJ0buVrAeKf5g==
+  dependencies:
+    "@oneappexchange/axds-client-logger" "^2.0.0-alpha.0"
+
+"@oneappexchange/axds-client-env@^2.0.0-alpha.0":
+  version "2.0.0-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/axds-client-env/2.0.0-alpha.0/bafc8f4298b3c24e32712d1028de2b2dc2439449bb311498c3da85ccc0e2747b#6b9909ac4aa5319ef5690f6cc8dbd4b380d3a043"
+  integrity sha512-WB9DI1425c+F9ut434y1pxEf3YUPUD3nUYgjwrXV0PN+QvbuxmW8Wy1fP4vzqGPkLiTJRVvXFJHhFltONsyZqQ==
+
+"@oneappexchange/axds-client-fetch@^2.0.0-alpha.0":
+  version "2.0.0-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/axds-client-fetch/2.0.0-alpha.0/c9648283e29f6df26b447e24d83a6c200db221e494e70842e6085c082dd41f19#dce9dfe044daa2313ed5dea9c4c582c3c1336db3"
+  integrity sha512-S7zfck0F6/HdVmhbf/Gr8JN8Cq0WVd7IHsEIfJd9/Ymsq4vwj2Y0pWsmWcvQ/dKNs0LwU11DX6WXHNzTk0GOIw==
+  dependencies:
+    "@oneappexchange/axds-client-auth" "^2.0.0-alpha.0"
+    "@oneappexchange/axds-client-logger" "^2.0.0-alpha.0"
+
+"@oneappexchange/axds-client-locale@^2.0.0-alpha.0", "@oneappexchange/axds-client-locale@latest":
+  version "2.0.0-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/axds-client-locale/2.0.0-alpha.0/438fd6baf235984b7fa90be8cb928f131e1bebfb6b47162052a2201500444435#936870aeea43f801b5e70724c1a62484e72c3541"
+  integrity sha512-u+HX3D9xPg0USAsxmkN3J/jBSEWTC5d6kvAqtrTwnepB8TLXU2iG68Tc7LwewEawaVoYJIifNkRS40LMYdToXw==
+  dependencies:
+    "@oneappexchange/axds-client-logger" "^2.0.0-alpha.0"
+    i18n-js "^3.8.0"
+
+"@oneappexchange/axds-client-logger@^2.0.0-alpha.0":
+  version "2.0.0-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@oneappexchange/axds-client-logger/2.0.0-alpha.0/37a50e0751fcaa98ff402ede0936ce5095ee154eaf7c6b446a4299b2bf79d0a3#a909ea66582d54a64b05443fd030d9d71fd69c4c"
+  integrity sha512-VBFcKrs2i95O4V+qJtBQdBaqt8ywFEhJ75my1oafcuVgjYXK1LbX8yarPtIEHdaRrvavLtCZMwHwfOoMJ9+pog==
+  dependencies:
+    "@oneappexchange/axds-client-env" "^2.0.0-alpha.0"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
