@@ -1,6 +1,6 @@
 # LWR Scratch Pad - ☠️⚗️
 
-This Repo is a template for .....
+This Repo is a template for testing concepts in an LWR/LWC environment
 
 
 ### Project Setup
@@ -43,6 +43,9 @@ The LWR server is configured in `lwr.config.json`, at the root of the project.
         {
             "name": "@salesforce-ux/c360-grid/dist/index.css",
             "path": "./node_modules/@salesforce-ux/c360-grid/dist/index.css"
+        },
+        {
+        "npm": "@oneappexchange/appx-design-system"
         }
         ]},
     "assets": [
