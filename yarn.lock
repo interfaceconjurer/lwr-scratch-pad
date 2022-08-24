@@ -755,10 +755,10 @@
     "@lwrjs/diagnostics" "0.6.0-alpha.14"
     "@lwrjs/shared-utils" "0.6.0-alpha.14"
 
-"@oneappexchange/appx-design-system@0.0.1-alpha.4":
-  version "0.0.1-alpha.4"
-  resolved "https://npm.pkg.github.com/download/@oneappexchange/appx-design-system/0.0.1-alpha.4/ab57347fadf777aa46fe8857aeef24fb7f7677ea696d16d4c79215e7d4acbae6#79bec446d2cccc4e65838ef185d0126afb864b1a"
-  integrity sha512-svxQOTHD5La1qMaP7djV/uTngazti1FMp0jJ5Hcsjk5cimrUBe+yuyV2X+zZZsaa7H/FUUTX95s7eW62lc20kw==
+"@oneappexchange/appx-design-system@^0.0.1-alpha.7":
+  version "0.0.1-alpha.7"
+  resolved "https://npm.pkg.github.com/download/@OneAppExchange/appx-design-system/0.0.1-alpha.7/5651f30f33e1ea61b6559827414c08967206df91#5651f30f33e1ea61b6559827414c08967206df91"
+  integrity sha512-OaPiEkbMYHyr+B4w6hbBZ5WavrmwjSrsh1N8ndLU26C1OjpdooSQ6NXSi0i891EX+SMMoKxBw7rf6HO+Cvgj9w==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -871,35 +871,35 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@salesforce-ux/c360-grid@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@salesforce-ux/c360-grid/-/c360-grid-0.1.5.tgz#efe0d4ac80a459f4a8154615c03dae0f3812e192"
-  integrity sha512-TT+LUDZxun+uixXtn33AEdlkyFAKVmZksWZ9I+dr5PlAtQsvGVivTwaBB2O3H1XyJ8S5me03oQnHuPorKkvdgQ==
-  dependencies:
-    "@salesforce-ux/sds-grid" "^0.2.7"
-
-"@salesforce-ux/c360-styling-hooks@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@salesforce-ux/c360-styling-hooks/-/c360-styling-hooks-0.2.2.tgz#add959d1c409c4e2af9e7bc6407e0af1e790a8c3"
-  integrity sha512-3sN0/OxnamlFTsQaL4uo8rHEBQSXt+cH34AjrMUdDXqXx8JJRNliI9qxd6t/UGhSfns/M2NPrExLyKLIo65YrA==
-  dependencies:
-    "@salesforce-ux/sds-styling-aliases" "^0.2.0"
-    "@salesforce-ux/sds-styling-hooks" "^0.7.0"
-
 "@salesforce-ux/sds-grid@^0.2.7":
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/@salesforce-ux/sds-grid/-/sds-grid-0.2.8.tgz#2d44cc962946c40924e9ecfd8ba61bf5cbc8816c"
   integrity sha512-DY1T6UxbsUulAuR18pzjqqhToUDP5rsysgHBPBfERx2OexFQEgGbO8aKgmT63EafT8Tax+LXe06na5IxjDFpSw==
 
-"@salesforce-ux/sds-styling-aliases@^0.2.0":
+"@salesforce-ux/sds-styling-aliases@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@salesforce-ux/sds-styling-aliases/-/sds-styling-aliases-0.2.3.tgz#3c5f494b58756798da98ddcc2ae7e403e8fa3a85"
   integrity sha512-M6riDnVx19FN2s7Q+OFs6EyED3q/ssR8bsY3H2QKB8WNUEOOdRFw26pAU7SmWr/WSiTdQP5Z+u3iSUDJJWZqzw==
 
-"@salesforce-ux/sds-styling-hooks@^0.7.0":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@salesforce-ux/sds-styling-hooks/-/sds-styling-hooks-0.7.1.tgz#b8ebc0b62d192ae6c651adcbcf2ddf081951098e"
-  integrity sha512-1OEGGmZlByzyiPZslEyb9KKGhbk2LQOOykzhRreFAucyAdU8fj5er1uPY7xvDpvD3tAIQh5+JcV7HvqPw7um5w==
+"@salesforce-ux/sds-styling-hooks@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@salesforce-ux/sds-styling-hooks/-/sds-styling-hooks-0.7.0.tgz#ae8014a707d5d082352f9d1d919add9a9c6e2abd"
+  integrity sha512-VXz1/aKAFCLngUdf5IU9BybNWkfNJBS+yR5KFbwMAjGk1MZ+rghfnEHqbddE7E2KSOKGbszNBMW8/FUCTeRjIQ==
+
+"@salesforce-ux/wes-grid@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@salesforce-ux/wes-grid/-/wes-grid-0.0.1.tgz#8b8d3ec101a5735f9a8a7dc73cb351bc693c16c1"
+  integrity sha512-HNab608iMzttc4oc9JW58lVTs+sJLvZncRlsFn/1TVJMSzWqVnJGJVA60TOSjjZcaLmJ9RQEKQzG6aKQC3cv+Q==
+  dependencies:
+    "@salesforce-ux/sds-grid" "^0.2.7"
+
+"@salesforce-ux/wes-styling-hooks@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@salesforce-ux/wes-styling-hooks/-/wes-styling-hooks-0.0.1.tgz#ff53d733abfb17e327948c22a5198fa37e4de9a9"
+  integrity sha512-qWyzIdrqVxhM6jRhwenWLylaJUn5DcIg0IcXG76yI9M0fq7aWgh+AtlvZ/Diq0uYKfG6/PkcOTIXvpN4uBGOyw==
+  dependencies:
+    "@salesforce-ux/sds-styling-aliases" "^0.2.3"
+    "@salesforce-ux/sds-styling-hooks" "0.7.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
