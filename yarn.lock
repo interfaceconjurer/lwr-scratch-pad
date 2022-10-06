@@ -755,10 +755,10 @@
     "@lwrjs/diagnostics" "0.6.0-alpha.14"
     "@lwrjs/shared-utils" "0.6.0-alpha.14"
 
-"@oneappexchange/appx-design-system@^0.0.1-alpha.7":
-  version "0.0.1-alpha.7"
-  resolved "https://npm.pkg.github.com/download/@OneAppExchange/appx-design-system/0.0.1-alpha.7/5651f30f33e1ea61b6559827414c08967206df91#5651f30f33e1ea61b6559827414c08967206df91"
-  integrity sha512-OaPiEkbMYHyr+B4w6hbBZ5WavrmwjSrsh1N8ndLU26C1OjpdooSQ6NXSi0i891EX+SMMoKxBw7rf6HO+Cvgj9w==
+"@oneappexchange/appx-design-system@^0.0.1-alpha.8":
+  version "0.0.1-alpha.8"
+  resolved "https://npm.pkg.github.com/download/@OneAppExchange/appx-design-system/0.0.1-alpha.8/648e145c5e6a57e747c5ce7c0629b04877db6ee7#648e145c5e6a57e747c5ce7c0629b04877db6ee7"
+  integrity sha512-STVPXhG70qe2qdnX8LTgNtOLAEVkA88s8vCFv3KMhM03iBUAN+AmU6uq0y6Y4zDP9KLYCyG4/U1UrWD44z1hxw==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
