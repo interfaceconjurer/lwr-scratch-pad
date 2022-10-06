@@ -9,7 +9,7 @@ The directory structure looks like this:
 
 ```
 scripts/
-  └── copy-resources.mjs                // copy useful files to assets (ie c360 stylehooks)
+  └── copy-resources.mjs                // copy useful files to assets (ie wes stylehooks)
 src/
   ├── assets/                           // static assets
   │   └── css/
@@ -41,8 +41,8 @@ The LWR server is configured in `lwr.config.json`, at the root of the project.
             "dir": "$rootDir/src/modules" 
         },
         {
-            "name": "@salesforce-ux/c360-grid/dist/index.css",
-            "path": "./node_modules/@salesforce-ux/c360-grid/dist/index.css"
+            "name": "@salesforce-ux/wes-grid/dist/index.css",
+            "path": "./node_modules/@salesforce-ux/wes-grid/dist/index.css"
         },
         {
         "npm": "@oneappexchange/appx-design-system"

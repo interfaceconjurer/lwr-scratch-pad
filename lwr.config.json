@@ -5,8 +5,8 @@
         "dir": "$rootDir/src/modules"
       },
       {
-        "name": "@salesforce-ux/c360-grid/dist/index.css",
-        "path": "./node_modules/@salesforce-ux/c360-grid/dist/index.css"
+        "name": "@salesforce-ux/wes-grid/dist/index.css",
+        "path": "./node_modules/@salesforce-ux/wes-grid/dist/index.css"
       },
       {
         "npm": "@oneappexchange/appx-design-system"
